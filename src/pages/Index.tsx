@@ -34,7 +34,7 @@ const Index = () => {
               </a>
               <a href="#" className="text-blue-600 hover:text-blue-800">
                 <Icon name="MapPin" size={16} className="inline mr-1" />
-                г. Якутск
+                П. Алексеева, 17, ТЦ "Золотые ворота"
               </a>
               <span>•</span>
               <a href="https://wa.me/79248638808" target="_blank" rel="noopener noreferrer" className="text-amber-600 hover:text-amber-800">
@@ -372,7 +372,7 @@ const Index = () => {
                   <Icon name="MapPin" className="text-techBlue" size={32} />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Адрес</h3>
-                <p className="text-gray-600">г. Якутск<br />Ул. Лермонтова, 124</p>
+                <p className="text-gray-600">г. Якутск<br />Ул. Петра Алексеева, 17<br />ТЦ "Золотые ворота"</p>
               </CardContent>
             </Card>
             <Card className="text-center hover:shadow-lg transition-shadow">
