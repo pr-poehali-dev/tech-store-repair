@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import Catalog from "./pages/Catalog";
 import Components from "./pages/Components";
 import Recycling from "./pages/Recycling";
+import Printing3D from "./pages/Printing3D";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="/catalog" element={<Catalog />} />
           <Route path="/components" element={<Components />} />
           <Route path="/recycling" element={<Recycling />} />
+          <Route path="/3d-printing" element={<Printing3D />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
