@@ -179,11 +179,11 @@ export default function Recycling() {
             </div>
             <div className="flex items-center space-x-3">
               <div className="bg-purple-100 p-3 rounded-full">
-                <Icon name="Truck" className="text-purple-600" size={24} />
+                <Icon name="ShieldCheck" className="text-purple-600" size={24} />
               </div>
               <div>
-                <h3 className="font-semibold text-purple-800">Бесплатный вывоз</h3>
-                <p className="text-sm text-purple-600">Приедем и заберем технику сами</p>
+                <h3 className="font-semibold text-purple-800">Надежность</h3>
+                <p className="text-sm text-purple-600">Работаем официально и безопасно</p>
               </div>
             </div>
           </div>
