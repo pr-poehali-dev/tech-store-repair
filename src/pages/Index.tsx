@@ -98,20 +98,11 @@ const Index = () => {
               </div>
             </div>
             <div className="flex justify-center lg:justify-end">
-              <div className="relative">
-                <img 
-                  src="/img/b1736ce1-e426-4f62-8b1f-d6c371ee93b7.jpg" 
-                  alt="Техника для ремонта" 
-                  className="w-full max-w-lg rounded-lg shadow-2xl"
-                />
-                <div className="absolute -bottom-4 -right-4 bg-white/90 backdrop-blur-sm rounded-lg p-3">
-                  <img 
-                    src="https://cdn.poehali.dev/files/c5c51c20-72c1-4808-b614-f514c287a63b.jpeg" 
-                    alt="STL 3D визитка" 
-                    className="w-24 h-auto rounded opacity-80"
-                  />
-                </div>
-              </div>
+              <img 
+                src="/img/b1736ce1-e426-4f62-8b1f-d6c371ee93b7.jpg" 
+                alt="Техника для ремонта" 
+                className="w-full max-w-lg rounded-lg shadow-2xl"
+              />
             </div>
           </div>
         </div>
