@@ -6,57 +6,75 @@ import Icon from '@/components/ui/icon';
 const computers = [
   {
     id: 1,
-    name: "Игровой ПК GeForce RTX 4060",
-    price: "89,990",
-    oldPrice: "99,990",
+    name: "ПГМК Ryzen 5 3600",
+    price: "75,000",
+    oldPrice: "82,000",
     image: "/api/placeholder/300/250",
-    specs: ["Intel Core i5-12400F", "16GB DDR4", "RTX 4060 8GB", "1TB NVMe SSD"],
+    specs: ["AMD Ryzen 5 3600", "16GB DDR4", "GTX 1660 Super", "500GB SSD"],
     badge: "Хит продаж"
   },
   {
     id: 2,
-    name: "Офисный ПК Intel Core i3",
-    price: "34,990",
+    name: "Офисный ПК Intel i3",
+    price: "45,000",
     oldPrice: null,
     image: "/api/placeholder/300/250",
-    specs: ["Intel Core i3-10100", "8GB DDR4", "Intel UHD 630", "500GB SSD"],
+    specs: ["Intel Core i3-10100", "8GB DDR4", "Intel UHD 630", "256GB SSD"],
     badge: null
   },
   {
     id: 3,
-    name: "Рабочая станция AMD Ryzen 7",
-    price: "124,990",
-    oldPrice: "134,990",
+    name: "Игровой ПК Ryzen 7",
+    price: "95,000",
+    oldPrice: "105,000",
     image: "/api/placeholder/300/250",
-    specs: ["AMD Ryzen 7 5700X", "32GB DDR4", "RTX 4070 12GB", "2TB NVMe SSD"],
-    badge: "Новинка"
+    specs: ["AMD Ryzen 7 3700X", "32GB DDR4", "RTX 3060 Ti", "1TB NVMe SSD"],
+    badge: "Рекомендуем"
   },
   {
     id: 4,
     name: "Бюджетный ПК для дома",
-    price: "24,990",
+    price: "35,000",
     oldPrice: null,
     image: "/api/placeholder/300/250",
-    specs: ["AMD Ryzen 3 4100", "8GB DDR4", "Radeon Vega 8", "256GB SSD"],
+    specs: ["AMD Ryzen 3 3200G", "8GB DDR4", "Radeon Vega 8", "250GB SSD"],
     badge: null
   },
   {
     id: 5,
-    name: "Мощный игровой ПК RTX 4070",
-    price: "149,990",
-    oldPrice: "164,990",
+    name: "Мощная рабочая станция",
+    price: "125,000",
+    oldPrice: "138,000",
     image: "/api/placeholder/300/250",
-    specs: ["Intel Core i7-12700F", "32GB DDR4", "RTX 4070 12GB", "1TB NVMe SSD"],
+    specs: ["Intel Core i7-11700K", "32GB DDR4", "RTX 3070", "1TB NVMe SSD"],
     badge: "Топ выбор"
   },
   {
     id: 6,
     name: "Компактный Mini-ITX",
-    price: "67,990",
+    price: "55,000",
     oldPrice: null,
     image: "/api/placeholder/300/250",
     specs: ["AMD Ryzen 5 5600G", "16GB DDR4", "Radeon Vega 7", "512GB SSD"],
     badge: null
+  },
+  {
+    id: 7,
+    name: "Сервер для малого бизнеса",
+    price: "85,000",
+    oldPrice: null,
+    image: "/api/placeholder/300/250",
+    specs: ["Intel Xeon E-2224", "32GB ECC DDR4", "Intel UHD P630", "2TB HDD"],
+    badge: null
+  },
+  {
+    id: 8,
+    name: "Студийный ПК для монтажа",
+    price: "110,000",
+    oldPrice: "120,000",
+    image: "/api/placeholder/300/250",
+    specs: ["AMD Ryzen 9 5900X", "64GB DDR4", "RTX 4060", "2TB NVMe SSD"],
+    badge: "Новинка"
   }
 ];
 
@@ -120,21 +138,15 @@ export default function Catalog() {
                   ))}
                 </div>
                 
-                <div className="flex items-center justify-between">
-                  <div className="space-y-1">
-                    <div className="text-2xl font-bold text-gray-900">
-                      {computer.price} ₽
-                    </div>
-                    {computer.oldPrice && (
-                      <div className="text-sm text-gray-500 line-through">
-                        {computer.oldPrice} ₽
-                      </div>
-                    )}
+                <div className="space-y-1">
+                  <div className="text-2xl font-bold text-gray-900">
+                    {computer.price} ₽
                   </div>
-                  <Button size="sm" className="bg-blue-600 hover:bg-blue-700">
-                    <Icon name="ShoppingCart" size={16} className="mr-2" />
-                    Заказать
-                  </Button>
+                  {computer.oldPrice && (
+                    <div className="text-sm text-gray-500 line-through">
+                      {computer.oldPrice} ₽
+                    </div>
+                  )}
                 </div>
               </CardContent>
             </Card>
