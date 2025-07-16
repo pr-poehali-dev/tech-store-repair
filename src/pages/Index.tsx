@@ -42,8 +42,8 @@ const Index = () => {
                   ENTER<span className="text-yellow-400">14</span>
                 </div>
                 <div className="text-sm text-gray-600">
-                  <div className="font-medium">Компьютерный магазин</div>
-                  <div className="text-xs">низких цен в Якутске</div>
+                  <div className="font-medium">Сервисный центр</div>
+                  <div className="text-xs">и комиссионный магазин</div>
                 </div>
               </div>
             </div>
@@ -73,11 +73,10 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Гарантия <span className="text-yellow-400">низких цен</span>
+              Ремонт <span className="text-yellow-400">телефонов</span> и компьютеров
             </h1>
             <p className="text-xl mb-8 max-w-3xl mx-auto">
-              Более 25 моделей компьютеров и комплектующих в наличии. 
-              Бесплатная доставка по Якутску. Официальная гарантия.
+              Сервисный центр по ремонту телефонов и компьютеров и комиссионный магазин компьютерной техники в Якутске
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold">
