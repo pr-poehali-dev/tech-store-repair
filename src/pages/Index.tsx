@@ -66,7 +66,7 @@ const Index = () => {
               </div>
             </div>
             <nav className="hidden md:flex space-x-8">
-              <a href="#" className="text-gray-700 hover:text-blue-600 font-medium">Компьютеры</a>
+              <a href="/catalog" className="text-gray-700 hover:text-blue-600 font-medium">Компьютеры</a>
               <a href="#" className="text-gray-700 hover:text-blue-600 font-medium">Комплектующие</a>
               <a href="#" className="text-gray-700 hover:text-blue-600 font-medium">Мониторы</a>
               <a href="#" className="text-gray-700 hover:text-blue-600 font-medium">Периферия</a>
@@ -429,9 +429,9 @@ const Index = () => {
             <div>
               <h4 className="font-semibold mb-4">Каталог</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">Смартфоны</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Ноутбуки</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Планшеты</a></li>
+                <li><a href="/catalog" className="hover:text-white transition-colors">Компьютеры</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">3D печать</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Ремонт</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Аксессуары</a></li>
               </ul>
             </div>
