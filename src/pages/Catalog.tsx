@@ -95,10 +95,6 @@ const Catalog = () => {
                 <Icon name="Search" size={16} className="mr-2" />
                 Поиск
               </Button>
-              <Button className="bg-blue-600 hover:bg-blue-700">
-                <Icon name="ShoppingCart" size={16} className="mr-2" />
-                Корзина
-              </Button>
             </div>
           </div>
         </div>
