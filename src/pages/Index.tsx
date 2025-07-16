@@ -78,14 +78,14 @@ const Index = () => {
             <p className="text-xl mb-6 max-w-3xl mx-auto">
               Сервисный центр по ремонту телефонов и компьютеров и комиссионный магазин компьютерной техники в Якутске
             </p>
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 mb-8 max-w-2xl mx-auto">
+            <div className="bg-gradient-to-r from-amber-400 to-yellow-500 text-black rounded-lg p-4 mb-8 max-w-2xl mx-auto border-2 border-yellow-400 shadow-lg">
               <div className="flex items-center justify-center space-x-4">
-                <div className="bg-white/20 p-3 rounded-full">
+                <div className="bg-black p-3 rounded-full">
                   <Icon name="Printer" className="text-yellow-400" size={24} />
                 </div>
                 <div className="text-left">
-                  <h3 className="font-bold text-yellow-400">STL 3D</h3>
-                  <p className="text-sm text-gray-200">Фирма по изготовлению 3D печати</p>
+                  <h3 className="font-bold text-black text-xl">STL 3D</h3>
+                  <p className="text-sm text-gray-800">Фирма по изготовлению 3D печати</p>
                 </div>
               </div>
             </div>
