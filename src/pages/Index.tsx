@@ -70,7 +70,7 @@ const Index = () => {
               <a href="/components" className="text-gray-700 hover:text-blue-600 font-medium">Комплектующие</a>
               <a href="/recycling" className="text-gray-700 hover:text-blue-600 font-medium">Выкуп техники</a>
               <a href="/3d-printing" className="text-gray-700 hover:text-blue-600 font-medium">3D печать</a>
-              <a href="#" className="text-gray-700 hover:text-blue-600 font-medium">Ремонт</a>
+              <a href="/repair" className="text-gray-700 hover:text-blue-600 font-medium">Ремонт</a>
             </nav>
             <div className="flex items-center space-x-4">
               <Button variant="outline" size="sm">
@@ -433,7 +433,7 @@ const Index = () => {
                 <li><a href="/components" className="hover:text-white transition-colors">Комплектующие</a></li>
                 <li><a href="/recycling" className="hover:text-white transition-colors">Выкуп техники</a></li>
                 <li><a href="/3d-printing" className="hover:text-white transition-colors">3D печать</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Ремонт</a></li>
+                <li><a href="/repair" className="hover:text-white transition-colors">Ремонт</a></li>
               </ul>
             </div>
             <div>
