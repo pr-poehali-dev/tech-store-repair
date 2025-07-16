@@ -5,138 +5,167 @@ import Icon from "@/components/ui/icon";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-lightGray to-white">
-      {/* Header */}
-      <header className="bg-white/80 backdrop-blur-md border-b border-gray-200 sticky top-0 z-50">
+    <div className="min-h-screen bg-gray-50">
+      {/* Top Header */}
+      <div className="bg-white shadow-sm border-b">
+        <div className="container mx-auto px-4 py-2">
+          <div className="flex justify-between items-center text-sm text-gray-600">
+            <div className="flex items-center gap-4">
+              <a href="#" className="flex items-center gap-2 text-blue-600 hover:text-blue-800">
+                <Icon name="Phone" size={16} />
+                +7 (4112) 50-14-14
+              </a>
+              <span>•</span>
+              <span className="text-green-600 font-medium">Бесплатная доставка по Якутску</span>
+            </div>
+            <div className="flex items-center gap-4">
+              <a href="#" className="text-blue-600 hover:text-blue-800">
+                <Icon name="Clock" size={16} className="inline mr-1" />
+                Пн-Пт: 10:00-20:00
+              </a>
+              <a href="#" className="text-blue-600 hover:text-blue-800">
+                <Icon name="MapPin" size={16} className="inline mr-1" />
+                г. Якутск
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Header */}
+      <header className="bg-white shadow-lg">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2">
-              <Icon name="Zap" className="text-techBlue" size={32} />
-              <h1 className="text-2xl font-bold text-accentGray">TechStore</h1>
+            <div className="flex items-center space-x-4">
+              <div className="flex items-center space-x-2">
+                <div className="bg-blue-600 text-white px-3 py-2 rounded-lg font-bold text-xl">
+                  ENTER<span className="text-yellow-400">14</span>
+                </div>
+                <div className="text-sm text-gray-600">
+                  <div className="font-medium">Компьютерный магазин</div>
+                  <div className="text-xs">низких цен в Якутске</div>
+                </div>
+              </div>
             </div>
             <nav className="hidden md:flex space-x-8">
-              <a href="#" className="text-accentGray hover:text-techBlue transition-colors">Главная</a>
-              <a href="#catalog" className="text-accentGray hover:text-techBlue transition-colors">Каталог</a>
-              <a href="#repair" className="text-accentGray hover:text-techBlue transition-colors">Услуги ремонта</a>
-              <a href="#contact" className="text-accentGray hover:text-techBlue transition-colors">Контакты</a>
+              <a href="#" className="text-gray-700 hover:text-blue-600 font-medium">Компьютеры</a>
+              <a href="#" className="text-gray-700 hover:text-blue-600 font-medium">Комплектующие</a>
+              <a href="#" className="text-gray-700 hover:text-blue-600 font-medium">Мониторы</a>
+              <a href="#" className="text-gray-700 hover:text-blue-600 font-medium">Периферия</a>
+              <a href="#" className="text-gray-700 hover:text-blue-600 font-medium">Ремонт</a>
             </nav>
-            <Button className="bg-techBlue hover:bg-blue-700">
-              <Icon name="Phone" size={16} className="mr-2" />
-              Связаться
-            </Button>
+            <div className="flex items-center space-x-4">
+              <Button variant="outline" size="sm">
+                <Icon name="Search" size={16} className="mr-2" />
+                Поиск
+              </Button>
+              <Button className="bg-blue-600 hover:bg-blue-700">
+                <Icon name="ShoppingCart" size={16} className="mr-2" />
+                Корзина
+              </Button>
+            </div>
           </div>
         </div>
       </header>
 
-      {/* Hero Section */}
-      <section className="py-20 px-4 animate-fade-in">
-        <div className="container mx-auto text-center">
-          <h2 className="text-5xl md:text-6xl font-bold text-accentGray mb-6">
-            Компьютерная техника
-            <br />
-            <span className="text-techBlue">нового поколения</span>
-          </h2>
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Продажа современной техники и профессиональный ремонт смартфонов, ноутбуков и планшетов с гарантией качества
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-techBlue hover:bg-blue-700">
-              <Icon name="ShoppingCart" size={20} className="mr-2" />
-              Каталог товаров
-            </Button>
-            <Button size="lg" variant="outline" className="border-techBlue text-techBlue hover:bg-techBlue hover:text-white">
-              <Icon name="Wrench" size={20} className="mr-2" />
-              Заказать ремонт
-            </Button>
+      {/* Hero Banner */}
+      <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
+        <div className="container mx-auto px-4">
+          <div className="text-center">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              Гарантия <span className="text-yellow-400">низких цен</span>
+            </h1>
+            <p className="text-xl mb-8 max-w-3xl mx-auto">
+              Более 25 моделей компьютеров и комплектующих в наличии. 
+              Бесплатная доставка по Якутску. Официальная гарантия.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold">
+                <Icon name="Zap" size={20} className="mr-2" />
+                Каталог компьютеров
+              </Button>
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
+                <Icon name="Calculator" size={20} className="mr-2" />
+                Собрать ПК
+              </Button>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Features */}
-      <section className="py-16 px-4 bg-white">
-        <div className="container mx-auto">
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="text-center hover:shadow-lg transition-shadow animate-slide-up">
+      <section className="py-12 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-4 gap-6">
+            <Card className="text-center border-0 shadow-md hover:shadow-lg transition-shadow">
               <CardContent className="pt-6">
-                <div className="bg-techBlue/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="Zap" className="text-techBlue" size={32} />
+                <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Truck" className="text-green-600" size={32} />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Экспресс-ремонт</h3>
-                <p className="text-gray-600">Быстрый ремонт за 30 минут для большинства неисправностей</p>
+                <h3 className="font-bold mb-2">Бесплатная доставка</h3>
+                <p className="text-sm text-gray-600">По всему Якутску в день заказа</p>
               </CardContent>
             </Card>
-            <Card className="text-center hover:shadow-lg transition-shadow animate-slide-up">
+            <Card className="text-center border-0 shadow-md hover:shadow-lg transition-shadow">
               <CardContent className="pt-6">
-                <div className="bg-techGreen/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="Shield" className="text-techGreen" size={32} />
+                <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Shield" className="text-blue-600" size={32} />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Гарантия качества</h3>
-                <p className="text-gray-600">Официальная гарантия на все работы и запчасти до 1 года</p>
+                <h3 className="font-bold mb-2">Гарантия 3 года</h3>
+                <p className="text-sm text-gray-600">На все компьютеры и комплектующие</p>
               </CardContent>
             </Card>
-            <Card className="text-center hover:shadow-lg transition-shadow animate-slide-up">
+            <Card className="text-center border-0 shadow-md hover:shadow-lg transition-shadow">
               <CardContent className="pt-6">
-                <div className="bg-techPurple/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="Search" className="text-techPurple" size={32} />
+                <div className="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Wrench" className="text-yellow-600" size={32} />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Диагностика</h3>
-                <p className="text-gray-600">Бесплатная диагностика неисправностей за 15 минут</p>
+                <h3 className="font-bold mb-2">Бесплатная сборка</h3>
+                <p className="text-sm text-gray-600">Соберем и протестируем ПК</p>
+              </CardContent>
+            </Card>
+            <Card className="text-center border-0 shadow-md hover:shadow-lg transition-shadow">
+              <CardContent className="pt-6">
+                <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="CreditCard" className="text-purple-600" size={32} />
+                </div>
+                <h3 className="font-bold mb-2">Рассрочка 0%</h3>
+                <p className="text-sm text-gray-600">До 12 месяцев без переплат</p>
               </CardContent>
             </Card>
           </div>
         </div>
       </section>
 
-      {/* Catalog Section */}
-      <section id="catalog" className="py-20 px-4">
-        <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center text-accentGray mb-12">Популярные товары</h2>
+      {/* Popular Products */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">Популярные товары</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="overflow-hidden hover:shadow-xl transition-shadow group">
-              <div className="aspect-square bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-                <img 
-                  src="/img/9ca558a4-ccc4-4564-a64f-f0ef3edf3c33.jpg" 
-                  alt="Смартфоны" 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <CardHeader>
-                <CardTitle className="flex items-center justify-between">
-                  Смартфоны
-                  <Badge variant="secondary" className="bg-techBlue/10 text-techBlue">ТОП</Badge>
-                </CardTitle>
-                <CardDescription>Новейшие модели от ведущих производителей</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="flex items-center justify-between">
-                  <span className="text-2xl font-bold text-techBlue">от 15 000₽</span>
-                  <Button size="sm" className="bg-techBlue hover:bg-blue-700">
-                    <Icon name="ShoppingCart" size={16} className="mr-2" />
-                    Купить
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="overflow-hidden hover:shadow-xl transition-shadow group">
-              <div className="aspect-square bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
+              <div className="aspect-square bg-white flex items-center justify-center p-8">
                 <img 
                   src="/img/59365b21-cde8-4320-a182-81b959f8c8ad.jpg" 
-                  alt="Ноутбуки" 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  alt="Игровой компьютер" 
+                  className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <CardHeader>
                 <CardTitle className="flex items-center justify-between">
-                  Ноутбуки
-                  <Badge variant="secondary" className="bg-techGreen/10 text-techGreen">НОВИНКИ</Badge>
+                  Игровой ПК GTX 1660
+                  <Badge className="bg-red-500 text-white">ХИТ</Badge>
                 </CardTitle>
-                <CardDescription>Мощные устройства для работы и игр</CardDescription>
+                <CardDescription>
+                  Intel Core i5 / GTX 1660 / 16GB RAM / SSD 512GB
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="flex items-center justify-between">
-                  <span className="text-2xl font-bold text-techBlue">от 45 000₽</span>
-                  <Button size="sm" className="bg-techBlue hover:bg-blue-700">
+                  <div>
+                    <span className="text-2xl font-bold text-blue-600">65 000₽</span>
+                    <div className="text-sm text-gray-500 line-through">75 000₽</div>
+                  </div>
+                  <Button className="bg-blue-600 hover:bg-blue-700">
                     <Icon name="ShoppingCart" size={16} className="mr-2" />
                     Купить
                   </Button>
@@ -145,24 +174,60 @@ const Index = () => {
             </Card>
 
             <Card className="overflow-hidden hover:shadow-xl transition-shadow group">
-              <div className="aspect-square bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
+              <div className="aspect-square bg-white flex items-center justify-center p-8">
                 <img 
-                  src="/img/82a2f8b5-e1f9-4201-8aa2-d1faebdd2302.jpg" 
-                  alt="Планшеты" 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  src="/img/9ca558a4-ccc4-4564-a64f-f0ef3edf3c33.jpg" 
+                  alt="Офисный компьютер" 
+                  className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <CardHeader>
                 <CardTitle className="flex items-center justify-between">
-                  Планшеты
-                  <Badge variant="secondary" className="bg-techPurple/10 text-techPurple">СКИДКА</Badge>
+                  Офисный ПК Ryzen 5
+                  <Badge variant="secondary">НОВИНКА</Badge>
                 </CardTitle>
-                <CardDescription>Идеальны для творчества и развлечений</CardDescription>
+                <CardDescription>
+                  AMD Ryzen 5 / 8GB RAM / SSD 256GB / Встроенная графика
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="flex items-center justify-between">
-                  <span className="text-2xl font-bold text-techBlue">от 25 000₽</span>
-                  <Button size="sm" className="bg-techBlue hover:bg-blue-700">
+                  <div>
+                    <span className="text-2xl font-bold text-blue-600">35 000₽</span>
+                    <div className="text-sm text-gray-500 line-through">42 000₽</div>
+                  </div>
+                  <Button className="bg-blue-600 hover:bg-blue-700">
+                    <Icon name="ShoppingCart" size={16} className="mr-2" />
+                    Купить
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow group">
+              <div className="aspect-square bg-white flex items-center justify-center p-8">
+                <img 
+                  src="/img/82a2f8b5-e1f9-4201-8aa2-d1faebdd2302.jpg" 
+                  alt="Мониторы" 
+                  className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="flex items-center justify-between">
+                  Монитор 27" IPS
+                  <Badge className="bg-green-500 text-white">СКИДКА</Badge>
+                </CardTitle>
+                <CardDescription>
+                  27 дюймов / Full HD / IPS матрица / 75Hz
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="flex items-center justify-between">
+                  <div>
+                    <span className="text-2xl font-bold text-blue-600">18 000₽</span>
+                    <div className="text-sm text-gray-500 line-through">25 000₽</div>
+                  </div>
+                  <Button className="bg-blue-600 hover:bg-blue-700">
                     <Icon name="ShoppingCart" size={16} className="mr-2" />
                     Купить
                   </Button>
