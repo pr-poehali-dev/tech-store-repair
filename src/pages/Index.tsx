@@ -111,7 +111,7 @@ const Index = () => {
                 <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Icon name="Shield" className="text-blue-600" size={32} />
                 </div>
-                <h3 className="font-bold mb-2">Гарантия 3 года</h3>
+                <h3 className="font-bold mb-2">Официальная гарантия</h3>
                 <p className="text-sm text-gray-600">На все компьютеры и комплектующие</p>
               </CardContent>
             </Card>
