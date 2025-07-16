@@ -96,16 +96,7 @@ const Index = () => {
       {/* Features */}
       <section className="py-12 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-6">
-            <Card className="text-center border-0 shadow-md hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6">
-                <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="Truck" className="text-green-600" size={32} />
-                </div>
-                <h3 className="font-bold mb-2">Бесплатная доставка</h3>
-                <p className="text-sm text-gray-600">По всему Якутску в день заказа</p>
-              </CardContent>
-            </Card>
+          <div className="grid md:grid-cols-2 gap-6">
             <Card className="text-center border-0 shadow-md hover:shadow-lg transition-shadow">
               <CardContent className="pt-6">
                 <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -122,15 +113,6 @@ const Index = () => {
                 </div>
                 <h3 className="font-bold mb-2">Бесплатная сборка</h3>
                 <p className="text-sm text-gray-600">Соберем и протестируем ПК</p>
-              </CardContent>
-            </Card>
-            <Card className="text-center border-0 shadow-md hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6">
-                <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="CreditCard" className="text-purple-600" size={32} />
-                </div>
-                <h3 className="font-bold mb-2">Рассрочка 0%</h3>
-                <p className="text-sm text-gray-600">До 12 месяцев без переплат</p>
               </CardContent>
             </Card>
           </div>
