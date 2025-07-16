@@ -17,19 +17,6 @@ const Repair: React.FC = () => {
       ]
     },
     {
-      category: "Ремонт ноутбуков",
-      items: [
-        { name: "Диагностика", price: "от 500₽" },
-        { name: "Чистка и замена термопасты", price: "1500₽" },
-        { name: "Замена экрана", price: "от 3000₽" },
-        { name: "Замена клавиатуры", price: "от 2000₽" },
-        { name: "Ремонт разъема питания", price: "от 2500₽" },
-        { name: "Замена батареи", price: "от 1800₽" },
-        { name: "Ремонт петель", price: "от 1500₽" },
-        { name: "Замена жесткого диска", price: "от 1000₽" }
-      ]
-    },
-    {
       category: "Ремонт мониторов",
       items: [
         { name: "Диагностика", price: "от 300₽" },
@@ -38,17 +25,6 @@ const Repair: React.FC = () => {
         { name: "Замена подсветки", price: "от 3000₽" },
         { name: "Ремонт разъемов", price: "от 800₽" },
         { name: "Настройка изображения", price: "500₽" }
-      ]
-    },
-    {
-      category: "Ремонт периферии",
-      items: [
-        { name: "Ремонт клавиатуры", price: "от 800₽" },
-        { name: "Ремонт мыши", price: "от 500₽" },
-        { name: "Ремонт принтера", price: "от 1500₽" },
-        { name: "Ремонт сканера", price: "от 1200₽" },
-        { name: "Ремонт веб-камеры", price: "от 800₽" },
-        { name: "Ремонт колонок", price: "от 1000₽" }
       ]
     },
     {
@@ -73,7 +49,7 @@ const Repair: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 py-6">
           <nav className="flex items-center justify-between">
             <div className="flex items-center space-x-8">
-              <a href="/" className="text-2xl font-bold text-blue-600">STL 3D</a>
+              <a href="/" className="text-2xl font-bold text-blue-600">Enter14</a>
               <a href="/catalog" className="text-gray-700 hover:text-blue-600 font-medium">Компьютеры</a>
               <a href="/components" className="text-gray-700 hover:text-blue-600 font-medium">Комплектующие</a>
               <a href="/recycling" className="text-gray-700 hover:text-blue-600 font-medium">Выкуп техники</a>
@@ -83,7 +59,7 @@ const Repair: React.FC = () => {
             <div className="flex items-center space-x-4">
               <div className="flex items-center space-x-2">
                 <Icon name="Phone" size={18} className="text-blue-600" />
-                <span className="text-gray-700">+7 (999) 123-45-67</span>
+                <span className="text-gray-700">8 (924) 161-76-99</span>
               </div>
             </div>
           </nav>
@@ -98,7 +74,7 @@ const Repair: React.FC = () => {
             Ремонт компьютерной техники
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Профессиональный ремонт компьютеров, ноутбуков и периферии. 
+            Профессиональный ремонт компьютеров и мониторов. 
             Быстро, качественно, с гарантией.
           </p>
         </div>
@@ -174,7 +150,7 @@ const Repair: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <div className="flex items-center space-x-2">
               <Icon name="Phone" size={20} />
-              <span className="text-lg font-semibold">+7 (999) 123-45-67</span>
+              <span className="text-lg font-semibold">8 (924) 161-76-99</span>
             </div>
             <div className="flex items-center space-x-2">
               <Icon name="Clock" size={20} />
@@ -189,7 +165,7 @@ const Repair: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-lg font-semibold mb-4">STL 3D</h3>
+              <h3 className="text-lg font-semibold mb-4">Enter14</h3>
               <p className="text-gray-300">Компьютеры, комплектующие, 3D печать и ремонт техники</p>
             </div>
             <div>
@@ -205,8 +181,8 @@ const Repair: React.FC = () => {
             <div>
               <h4 className="font-semibold mb-4">Контакты</h4>
               <div className="text-gray-300 space-y-2">
-                <p>+7 (999) 123-45-67</p>
-                <p>info@stl3d.ru</p>
+                <p>8 (924) 161-76-99</p>
+                <p>info@enter14.ru</p>
                 <p>г. Москва, ул. Примерная, 123</p>
               </div>
             </div>
