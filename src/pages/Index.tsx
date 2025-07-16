@@ -156,7 +156,7 @@ const Index = () => {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Популярные товары</h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-4 gap-8">
             <Card className="overflow-hidden hover:shadow-xl transition-shadow group">
               <div className="aspect-square bg-white flex items-center justify-center p-8">
                 <img 
@@ -245,6 +245,37 @@ const Index = () => {
                   <Button className="bg-blue-600 hover:bg-blue-700">
                     <Icon name="ShoppingCart" size={16} className="mr-2" />
                     Купить
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow group bg-gradient-to-br from-amber-50 to-yellow-100 border-2 border-yellow-400">
+              <div className="aspect-square bg-gradient-to-br from-amber-100 to-yellow-200 flex items-center justify-center p-8">
+                <img 
+                  src="/img/51a8b219-d1b5-4def-9ff9-30db2b6e1997.jpg" 
+                  alt="3D печать" 
+                  className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="flex items-center justify-between">
+                  3D печать STL
+                  <Badge className="bg-gradient-to-r from-amber-500 to-yellow-500 text-black font-bold">3D</Badge>
+                </CardTitle>
+                <CardDescription>
+                  Изготовление любых моделей по чертежам
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="flex items-center justify-between">
+                  <div>
+                    <span className="text-2xl font-bold text-amber-600">от 500₽</span>
+                    <div className="text-sm text-gray-500">за изделие</div>
+                  </div>
+                  <Button className="bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-black font-bold">
+                    <Icon name="Printer" size={16} className="mr-2" />
+                    Заказать
                   </Button>
                 </div>
               </CardContent>
