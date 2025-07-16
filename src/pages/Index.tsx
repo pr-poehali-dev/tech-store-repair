@@ -75,9 +75,20 @@ const Index = () => {
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               Ремонт <span className="text-yellow-400">телефонов</span> и компьютеров
             </h1>
-            <p className="text-xl mb-8 max-w-3xl mx-auto">
+            <p className="text-xl mb-6 max-w-3xl mx-auto">
               Сервисный центр по ремонту телефонов и компьютеров и комиссионный магазин компьютерной техники в Якутске
             </p>
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 mb-8 max-w-2xl mx-auto">
+              <div className="flex items-center justify-center space-x-4">
+                <div className="bg-white/20 p-3 rounded-full">
+                  <Icon name="Printer" className="text-yellow-400" size={24} />
+                </div>
+                <div className="text-left">
+                  <h3 className="font-bold text-yellow-400">STL 3D</h3>
+                  <p className="text-sm text-gray-200">Фирма по изготовлению 3D печати</p>
+                </div>
+              </div>
+            </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold">
                 <Icon name="Zap" size={20} className="mr-2" />
@@ -86,6 +97,10 @@ const Index = () => {
               <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
                 <Icon name="Calculator" size={20} className="mr-2" />
                 Собрать ПК
+              </Button>
+              <Button size="lg" variant="outline" className="border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black">
+                <Icon name="Printer" size={20} className="mr-2" />
+                3D печать
               </Button>
             </div>
           </div>
