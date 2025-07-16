@@ -422,9 +422,9 @@ const Index = () => {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <Icon name="Zap" className="text-techBlue" size={24} />
-                <h3 className="text-xl font-bold">TechStore</h3>
+                <h3 className="text-xl font-bold">STL 3D</h3>
               </div>
-              <p className="text-gray-400">Ваш надежный партнер в мире технологий</p>
+              <p className="text-gray-400">3D печать и технологии</p>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Каталог</h4>
