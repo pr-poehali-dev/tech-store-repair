@@ -102,17 +102,17 @@ const Index = () => {
                 <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Icon name="Shield" className="text-blue-600" size={32} />
                 </div>
-                <h3 className="font-bold mb-2">Официальная гарантия</h3>
+                <h3 className="font-bold mb-2">Гарантия до 3 месяцев</h3>
                 <p className="text-sm text-gray-600">На все компьютеры и комплектующие</p>
               </CardContent>
             </Card>
             <Card className="text-center border-0 shadow-md hover:shadow-lg transition-shadow">
               <CardContent className="pt-6">
-                <div className="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="Wrench" className="text-yellow-600" size={32} />
+                <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Search" className="text-green-600" size={32} />
                 </div>
-                <h3 className="font-bold mb-2">Бесплатная сборка</h3>
-                <p className="text-sm text-gray-600">Соберем и протестируем ПК</p>
+                <h3 className="font-bold mb-2">Диагностика бесплатно</h3>
+                <p className="text-sm text-gray-600">Определим проблему за 15 минут</p>
               </CardContent>
             </Card>
           </div>
