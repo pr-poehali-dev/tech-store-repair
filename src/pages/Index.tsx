@@ -11,17 +11,20 @@ const Index = () => {
         <div className="container mx-auto px-4 py-2">
           <div className="flex justify-between items-center text-sm text-gray-600">
             <div className="flex items-center gap-4">
-              <a href="#" className="flex items-center gap-2 text-blue-600 hover:text-blue-800">
+              <a href="tel:+79241617699" className="flex items-center gap-2 text-blue-600 hover:text-blue-800">
                 <Icon name="Phone" size={16} />
-                +7 (4112) 50-14-14
+                +7 (924) 161-76-99
               </a>
               <span>•</span>
-              <span className="text-green-600 font-medium">Бесплатная доставка по Якутску</span>
+              <a href="https://wa.me/79241617699" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-green-600 hover:text-green-800">
+                <Icon name="MessageCircle" size={16} />
+                WhatsApp
+              </a>
             </div>
             <div className="flex items-center gap-4">
               <a href="#" className="text-blue-600 hover:text-blue-800">
                 <Icon name="Clock" size={16} className="inline mr-1" />
-                Пн-Пт: 10:00-20:00
+                Пн-Сб: 10:00-19:00
               </a>
               <a href="#" className="text-blue-600 hover:text-blue-800">
                 <Icon name="MapPin" size={16} className="inline mr-1" />
@@ -354,7 +357,7 @@ const Index = () => {
                   <Icon name="MapPin" className="text-techBlue" size={32} />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Адрес</h3>
-                <p className="text-gray-600">ул. Технологическая, д. 1<br />Москва, 101000</p>
+                <p className="text-gray-600">г. Якутск<br />Ул. Лермонтова, 124</p>
               </CardContent>
             </Card>
             <Card className="text-center hover:shadow-lg transition-shadow">
@@ -363,16 +366,16 @@ const Index = () => {
                   <Icon name="Phone" className="text-techGreen" size={32} />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Телефон</h3>
-                <p className="text-gray-600">+7 (495) 123-45-67<br />Работаем 24/7</p>
+                <p className="text-gray-600">+7 (924) 161-76-99<br />Пн-Сб: 10:00-19:00</p>
               </CardContent>
             </Card>
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardContent className="pt-6">
-                <div className="bg-techPurple/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="Mail" className="text-techPurple" size={32} />
+                <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="MessageCircle" className="text-green-600" size={32} />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Email</h3>
-                <p className="text-gray-600">info@techstore.ru<br />support@techstore.ru</p>
+                <h3 className="text-xl font-semibold mb-2">WhatsApp</h3>
+                <p className="text-gray-600">+7 (924) 161-76-99<br /><a href="https://wa.me/79241617699" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-800">Написать в WhatsApp</a></p>
               </CardContent>
             </Card>
           </div>
@@ -409,17 +412,16 @@ const Index = () => {
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold mb-4">Соцсети</h4>
-              <div className="flex space-x-4">
-                <Button size="sm" variant="outline" className="border-gray-600 text-gray-400 hover:text-white hover:border-white">
-                  <Icon name="Instagram" size={16} />
-                </Button>
-                <Button size="sm" variant="outline" className="border-gray-600 text-gray-400 hover:text-white hover:border-white">
-                  <Icon name="Facebook" size={16} />
-                </Button>
-                <Button size="sm" variant="outline" className="border-gray-600 text-gray-400 hover:text-white hover:border-white">
-                  <Icon name="Twitter" size={16} />
-                </Button>
+              <h4 className="font-semibold mb-4">Контакты</h4>
+              <div className="space-y-2 text-gray-400">
+                <div>+7 (924) 161-76-99</div>
+                <div>Пн-Сб: 10:00-19:00</div>
+                <div>
+                  <a href="https://wa.me/79241617699" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300">
+                    <Icon name="MessageCircle" size={16} className="inline mr-1" />
+                    WhatsApp
+                  </a>
+                </div>
               </div>
             </div>
           </div>
