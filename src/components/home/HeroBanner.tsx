@@ -19,7 +19,7 @@ const HeroBanner = () => {
                   <Icon name="Printer" className="text-yellow-400" size={24} />
                 </div>
                 <div className="text-left">
-                  <h3 className="font-bold text-black text-xl">d Enter14 3D</h3>
+                  <h3 className="font-bold text-black text-xl">STL 3D</h3>
                   <p className="text-sm text-gray-800">Фирма по изготовлению 3D печати</p>
                 </div>
               </div>

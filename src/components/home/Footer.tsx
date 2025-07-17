@@ -8,7 +8,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <Icon name="Zap" className="text-techBlue" size={24} />
-              <h3 className="text-xl font-bold">d Enter14</h3>
+              <h3 className="text-xl font-bold">STL 3D</h3>
             </div>
             <p className="text-gray-400">3D печать и технологии</p>
           </div>
@@ -47,7 +47,7 @@ const Footer = () => {
                   TG
                 </a>
               </div>
-              <div className="text-amber-400 text-sm font-medium">d Enter14 3D:</div>
+              <div className="text-amber-400 text-sm font-medium">STL 3D:</div>
               <div className="whitespace-nowrap">+7 (924) 863-88-08</div>
               <div className="flex gap-2">
                 <a href="https://wa.me/79248638808" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300">
@@ -72,7 +72,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 d Enter14. Все права защищены.</p>
+          <p>&copy; 2024 STL 3D. Все права защищены.</p>
         </div>
       </div>
     </footer>

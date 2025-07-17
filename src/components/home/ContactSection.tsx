@@ -42,7 +42,7 @@ const ContactSection = () => {
               <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Icon name="Printer" className="text-amber-600" size={32} />
               </div>
-              <h3 className="text-xl font-semibold mb-2">d Enter14 3D</h3>
+              <h3 className="text-xl font-semibold mb-2">STL 3D</h3>
               <p className="text-gray-600"><span className="whitespace-nowrap">+7 (924) 863-88-08</span><br />
                 <a href="https://wa.me/79248638808" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-800 mr-2">
                   <Icon name="MessageCircle" size={16} className="inline mr-1" />
