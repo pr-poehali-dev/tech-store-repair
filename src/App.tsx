@@ -10,6 +10,7 @@ import Components from "./pages/Components";
 import Recycling from "./pages/Recycling";
 import Printing3D from "./pages/Printing3D";
 import Repair from "./pages/Repair";
+import PhoneRepair from "./pages/PhoneRepair";
 import Laptops from "./pages/Laptops";
 import NotFound from "./pages/NotFound";
 
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/recycling" element={<Recycling />} />
           <Route path="/3d-printing" element={<Printing3D />} />
           <Route path="/repair" element={<Repair />} />
+          <Route path="/phone-repair" element={<PhoneRepair />} />
           <Route path="/laptops" element={<Laptops />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
