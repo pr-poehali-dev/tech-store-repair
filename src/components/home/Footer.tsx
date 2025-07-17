@@ -59,6 +59,15 @@ const Footer = () => {
                   TG
                 </a>
               </div>
+              <a 
+                href="https://2gis.ru/yakutsk/firm/70000001048030975" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-1 hover:text-white transition-colors mt-2"
+              >
+                <Icon name="MapPin" size={16} />
+                <span>ул. П. Алексеева, 17</span>
+              </a>
             </div>
           </div>
         </div>
