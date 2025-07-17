@@ -313,7 +313,8 @@ export default function Printing3D() {
                 </div>
               </CardContent>
             </Card>
-          ))}
+            ))
+          )}
         </div>
 
         {/* Services */}
