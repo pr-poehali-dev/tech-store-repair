@@ -21,6 +21,11 @@ const Index = () => {
                 WhatsApp
               </a>
               <span>•</span>
+              <a href="https://t.me/+79241617699" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-blue-600 hover:text-blue-800">
+                <Icon name="Send" size={16} />
+                Telegram
+              </a>
+              <span>•</span>
               <a href="tel:+79248638808" className="flex items-center gap-2 text-amber-600 hover:text-amber-800">
                 <Icon name="Phone" size={16} />
                 +7 (924) 863-88-08
@@ -389,8 +394,11 @@ const Index = () => {
                 <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Icon name="MessageCircle" className="text-green-600" size={32} />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">WhatsApp</h3>
-                <p className="text-gray-600">+7 (924) 161-76-99<br /><a href="https://wa.me/79241617699" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-800">Написать в WhatsApp</a></p>
+                <h3 className="text-xl font-semibold mb-2">Мессенджеры</h3>
+                <div className="text-gray-600 space-y-2">
+                  <div><a href="https://wa.me/79241617699" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-800">WhatsApp</a></div>
+                  <div><a href="https://t.me/+79241617699" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">Telegram</a></div>
+                </div>
               </CardContent>
             </Card>
             <Card className="text-center hover:shadow-lg transition-shadow">
@@ -450,10 +458,14 @@ const Index = () => {
               <div className="space-y-2 text-gray-400">
                 <div>+7 (924) 161-76-99</div>
                 <div>Пн-Сб: 10:00-19:00</div>
-                <div>
+                <div className="flex gap-2">
                   <a href="https://wa.me/79241617699" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300">
                     <Icon name="MessageCircle" size={16} className="inline mr-1" />
-                    WhatsApp
+                    WA
+                  </a>
+                  <a href="https://t.me/+79241617699" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300">
+                    <Icon name="Send" size={16} className="inline mr-1" />
+                    TG
                   </a>
                 </div>
                 <div className="text-amber-400 text-sm font-medium">STL 3D:</div>

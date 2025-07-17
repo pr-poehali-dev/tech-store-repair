@@ -89,6 +89,14 @@ const Repair: React.FC = () => {
                 <Icon name="Phone" size={18} className="text-blue-600" />
                 <span className="text-gray-700">8 (924) 161-76-99</span>
               </div>
+              <a href="https://wa.me/79241617699" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-1 text-green-600 hover:text-green-800">
+                <Icon name="MessageCircle" size={16} />
+                <span className="text-sm">WhatsApp</span>
+              </a>
+              <a href="https://t.me/+79241617699" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-1 text-blue-600 hover:text-blue-800">
+                <Icon name="Send" size={16} />
+                <span className="text-sm">Telegram</span>
+              </a>
             </div>
           </nav>
         </div>
@@ -184,6 +192,16 @@ const Repair: React.FC = () => {
               <Icon name="Clock" size={20} />
               <span>Пн-Пт: 9:00-18:00, Сб: 10:00-16:00</span>
             </div>
+            <div className="flex items-center space-x-4">
+              <a href="https://wa.me/79241617699" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-1 text-green-400 hover:text-green-300">
+                <Icon name="MessageCircle" size={18} />
+                <span>WhatsApp</span>
+              </a>
+              <a href="https://t.me/+79241617699" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-1 text-blue-400 hover:text-blue-300">
+                <Icon name="Send" size={18} />
+                <span>Telegram</span>
+              </a>
+            </div>
           </div>
         </div>
       </main>
@@ -211,7 +229,17 @@ const Repair: React.FC = () => {
               <div className="text-gray-300 space-y-2">
                 <p>8 (924) 161-76-99</p>
                 <p>info@enter14.ru</p>
-                <p>г. Москва, ул. Примерная, 123</p>
+                <p>г. Якутск, ул. П. Алексеева, 17</p>
+                <div className="flex gap-2 mt-2">
+                  <a href="https://wa.me/79241617699" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300">
+                    <Icon name="MessageCircle" size={16} className="inline mr-1" />
+                    WA
+                  </a>
+                  <a href="https://t.me/+79241617699" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300">
+                    <Icon name="Send" size={16} className="inline mr-1" />
+                    TG
+                  </a>
+                </div>
               </div>
             </div>
             <div>
