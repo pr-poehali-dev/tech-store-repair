@@ -228,7 +228,7 @@ const Repair: React.FC = () => {
               <h4 className="font-semibold mb-4">Контакты</h4>
               <div className="text-gray-300 space-y-2">
                 <p className="whitespace-nowrap">8 (924) 161-76-99</p>
-                <p>info@enter14.ru</p>
+                <p>Mon-real@bk.ru</p>
                 <p>г. Якутск, ул. П. Алексеева, 17</p>
                 <div className="flex gap-2 mt-2">
                   <a href="https://wa.me/79241617699" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300">
