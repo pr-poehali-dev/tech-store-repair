@@ -5,7 +5,7 @@ const PhoneRepairServices = () => {
   const repairServices = [
     {
       name: "Диагностика",
-      price: "300₽",
+      price: "Бесплатно",
       description: "Полная диагностика неисправностей телефона"
     },
     {
@@ -53,7 +53,7 @@ const PhoneRepairServices = () => {
             Цены на ремонтные работы
           </h2>
           <p className="text-lg text-gray-600">
-            Стоимость работ по ремонту телефонов (без учета запчастей)
+            Стоимость работ по ремонту телефонов
           </p>
         </div>
 
@@ -69,6 +69,24 @@ const PhoneRepairServices = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        <div className="mt-12 bg-blue-50 rounded-lg p-6">
+          <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">Важная информация</h3>
+          <div className="grid md:grid-cols-3 gap-4 text-center">
+            <div className="bg-white rounded-lg p-4">
+              <div className="text-blue-600 font-semibold mb-2">Диагностика бесплатно</div>
+              <p className="text-sm text-gray-600">Диагностика входит в стоимость ремонта</p>
+            </div>
+            <div className="bg-white rounded-lg p-4">
+              <div className="text-green-600 font-semibold mb-2">Цены с запчастями</div>
+              <p className="text-sm text-gray-600">Цены указаны с учетом запчастей</p>
+            </div>
+            <div className="bg-white rounded-lg p-4">
+              <div className="text-orange-600 font-semibold mb-2">Сроки ремонта</div>
+              <p className="text-sm text-gray-600">Сроки зависят от наличия деталей</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
