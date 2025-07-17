@@ -32,7 +32,7 @@ const TopHeader = () => {
               <Icon name="Clock" size={16} className="inline mr-1" />
               Пн-Сб: 10:00-19:00
             </a>
-            <a href="https://2gis.ru/yakutsk/firm/70000001048030975" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">
+            <a href="https://2gis.ru/yakutsk/search/enter14%20якутск/firm/7037402698746526/129.737441%2C62.036234/tab/reviews?m=129.737441%2C62.036234%2F17.34" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">
               <Icon name="MapPin" size={16} className="inline mr-1" />
               П. Алексеева, 17, ТЦ "Золотые ворота"
             </a>

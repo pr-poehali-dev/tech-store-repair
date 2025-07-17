@@ -14,7 +14,7 @@ const PhoneRepairFooter = () => {
         <div className="text-gray-400">
           <p>© 2024 Enter14. Ремонт телефонов в Якутске</p>
           <a 
-            href="https://2gis.ru/yakutsk/firm/70000001048030975" 
+            href="https://2gis.ru/yakutsk/search/enter14%20якутск/firm/7037402698746526/129.737441%2C62.036234/tab/reviews?m=129.737441%2C62.036234%2F17.34" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-sm mt-2 inline-flex items-center space-x-2 hover:text-white transition-colors"
