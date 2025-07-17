@@ -1,4 +1,5 @@
 import React from 'react';
+import Icon from '@/components/ui/icon';
 
 const PhoneRepairFooter = () => {
   return (
@@ -12,7 +13,15 @@ const PhoneRepairFooter = () => {
         </div>
         <div className="text-gray-400">
           <p>© 2024 Enter14. Ремонт телефонов в Якутске</p>
-          <p className="text-sm mt-2">г. Якутск, ул. П. Алексеева, 17</p>
+          <a 
+            href="https://2gis.ru/yakutsk/firm/70000001048030975" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-sm mt-2 inline-flex items-center space-x-2 hover:text-white transition-colors"
+          >
+            <Icon name="MapPin" size={16} />
+            <span>г. Якутск, ул. П. Алексеева, 17</span>
+          </a>
         </div>
       </div>
     </footer>
