@@ -29,7 +29,7 @@ const HeroBanner = () => {
                 <Icon name="Zap" size={20} className="mr-2" />
                 Каталог компьютеров
               </Button>
-              <Button size="lg" variant="outline" className="border-green-400 text-green-400 hover:bg-green-400 hover:text-white" onClick={() => window.location.href = '/phone-repair'}>
+              <Button size="lg" variant="outline" className="border-green-400 text-green-400 hover:bg-green-400 hover:text-white" onClick={() => window.location.href = '/repair'}>
                 <Icon name="Smartphone" size={20} className="mr-2" />
                 Ремонт телефонов
               </Button>
