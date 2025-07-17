@@ -320,9 +320,29 @@ export default function Printing3D() {
         <div className="container mx-auto px-4 text-center">
           <h3 className="text-lg font-semibold mb-4">Связаться с нами</h3>
           <div className="flex items-center justify-center space-x-8">
-            <div className="flex items-center text-gray-600">
-              <Icon name="Phone" size={20} className="mr-2 text-blue-600" />
-              <span className="whitespace-nowrap">+7 (924) 863-88-08</span>
+            <div className="flex items-center space-x-4">
+              <div className="flex items-center text-gray-600">
+                <Icon name="Phone" size={20} className="mr-2 text-blue-600" />
+                <span className="whitespace-nowrap">+7 (924) 863-88-08</span>
+              </div>
+              <a 
+                href="https://wa.me/79248638808" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center text-green-600 hover:text-green-700 transition-colors"
+              >
+                <Icon name="MessageCircle" size={20} className="mr-1" />
+                WhatsApp
+              </a>
+              <a 
+                href="https://t.me/stl3d" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center text-blue-500 hover:text-blue-600 transition-colors"
+              >
+                <Icon name="Send" size={20} className="mr-1" />
+                Telegram
+              </a>
             </div>
             <div className="flex items-center text-gray-600">
               <Icon name="Clock" size={20} className="mr-2 text-blue-600" />
