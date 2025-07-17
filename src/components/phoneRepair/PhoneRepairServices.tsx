@@ -1,0 +1,78 @@
+import React from 'react';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+
+const PhoneRepairServices = () => {
+  const repairServices = [
+    {
+      name: "Диагностика",
+      price: "300₽",
+      description: "Полная диагностика неисправностей телефона"
+    },
+    {
+      name: "Замена батареи",
+      price: "от 1500₽",
+      description: "Замена аккумулятора на оригинальный или качественный аналог"
+    },
+    {
+      name: "Ремонт разъема зарядки",
+      price: "от 1800₽",
+      description: "Замена разъема micro-USB, USB-C или Lightning"
+    },
+    {
+      name: "Замена динамика/микрофона",
+      price: "от 1000₽",
+      description: "Восстановление звука и качества связи"
+    },
+    {
+      name: "Замена кнопок",
+      price: "от 1200₽",
+      description: "Ремонт кнопок включения, громкости, Home"
+    },
+    {
+      name: "Замена камеры",
+      price: "от 2500₽",
+      description: "Замена основной или фронтальной камеры"
+    },
+    {
+      name: "Ремонт после воды",
+      price: "от 2000₽",
+      description: "Восстановление после попадания жидкости"
+    },
+    {
+      name: "Перепрошивка",
+      price: "1500₽",
+      description: "Восстановление программного обеспечения"
+    }
+  ];
+
+  return (
+    <section className="py-16 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            Цены на ремонтные работы
+          </h2>
+          <p className="text-lg text-gray-600">
+            Стоимость работ по ремонту телефонов (без учета запчастей)
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {repairServices.map((service, index) => (
+            <Card key={index} className="hover:shadow-lg transition-shadow">
+              <CardHeader className="pb-4">
+                <CardTitle className="text-lg text-gray-900">{service.name}</CardTitle>
+                <div className="text-2xl font-bold text-green-600">{service.price}</div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-gray-600">{service.description}</p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default PhoneRepairServices;
