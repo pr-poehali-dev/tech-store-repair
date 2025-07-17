@@ -1,7 +1,9 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
 import Icon from '@/components/ui/icon';
+import { useState } from 'react';
 
 const materials = [
   {
@@ -131,6 +133,17 @@ const categories = [
 ];
 
 export default function Printing3D() {
+  const [searchTerm, setSearchTerm] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState('Все материалы');
+  const [isSearchVisible, setIsSearchVisible] = useState(false);
+
+  const filteredMaterials = materials.filter(material => {
+    const matchesSearch = material.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                         material.specs.some(spec => spec.toLowerCase().includes(searchTerm.toLowerCase()));
+    const matchesCategory = selectedCategory === 'Все материалы' || material.category === selectedCategory;
+    return matchesSearch && matchesCategory;
+  });
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
@@ -145,6 +158,14 @@ export default function Printing3D() {
               <h1 className="text-2xl font-bold text-gray-900">Прайс на 3D печать</h1>
             </div>
             <div className="flex items-center space-x-4">
+              <Button 
+                variant="outline" 
+                size="sm"
+                onClick={() => setIsSearchVisible(!isSearchVisible)}
+              >
+                <Icon name="Search" size={16} className="mr-2" />
+                Поиск
+              </Button>
               <Button variant="outline" size="sm">
                 <Icon name="Calculator" size={16} className="mr-2" />
                 Калькулятор
@@ -157,6 +178,36 @@ export default function Printing3D() {
           </div>
         </div>
       </div>
+
+      {/* Search Bar */}
+      {isSearchVisible && (
+        <div className="bg-white border-b shadow-sm">
+          <div className="container mx-auto px-4 py-4">
+            <div className="max-w-md mx-auto">
+              <div className="relative">
+                <Icon name="Search" size={16} className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+                <Input
+                  type="text"
+                  placeholder="Поиск материалов..."
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  className="pl-10"
+                />
+                {searchTerm && (
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    onClick={() => setSearchTerm('')}
+                    className="absolute right-2 top-1/2 transform -translate-y-1/2 h-6 w-6 p-0"
+                  >
+                    <Icon name="X" size={12} />
+                  </Button>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Info Banner */}
       <div className="bg-blue-50 border-b border-blue-200">
@@ -197,12 +248,13 @@ export default function Printing3D() {
       <div className="bg-white border-b">
         <div className="container mx-auto px-4 py-3">
           <div className="flex gap-2 overflow-x-auto">
-            {categories.map((category, index) => (
+            {categories.map((category) => (
               <Button
-                key={index}
-                variant={index === 0 ? "default" : "outline"}
+                key={category}
+                variant={selectedCategory === category ? "default" : "outline"}
                 size="sm"
                 className="whitespace-nowrap"
+                onClick={() => setSelectedCategory(category)}
               >
                 {category}
               </Button>
@@ -215,7 +267,14 @@ export default function Printing3D() {
       <div className="container mx-auto px-4 py-8">
         <h2 className="text-2xl font-bold mb-6">Материалы для 3D печати</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-12">
-          {materials.map((material) => (
+          {filteredMaterials.length === 0 ? (
+            <div className="col-span-full text-center py-8 text-gray-500">
+              <Icon name="Search" size={48} className="mx-auto mb-4 text-gray-300" />
+              <p>Материалы не найдены</p>
+              <p className="text-sm">Попробуйте изменить поисковый запрос или категорию</p>
+            </div>
+          ) : (
+            filteredMaterials.map((material) => (
             <Card key={material.id} className="overflow-hidden hover:shadow-lg transition-shadow group">
               <div className="relative">
                 <img 
@@ -317,9 +376,16 @@ export default function Printing3D() {
 
       {/* Contact Info */}
       <div className="bg-gray-100 py-8">
-        <div className="container mx-auto px-4 text-center">
-          <h3 className="text-lg font-semibold mb-4">Связаться с нами</h3>
-          <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="flex items-center text-gray-600">
+              <Icon name="Clock" size={20} className="mr-2 text-blue-600" />
+              <span>Пн-Сб: 10:00-19:00</span>
+            </div>
+            <div className="flex items-center text-gray-600">
+              <Icon name="MapPin" size={20} className="mr-2 text-blue-600" />
+              <span>П. Алексеева, 17, ТЦ "Золотые ворота"</span>
+            </div>
             <div className="flex items-center justify-center gap-4 flex-wrap">
               <div className="flex items-center text-gray-600">
                 <Icon name="Phone" size={20} className="mr-2 text-blue-600" />
@@ -343,14 +409,6 @@ export default function Printing3D() {
                 <Icon name="Send" size={20} className="mr-1" />
                 Telegram
               </a>
-            </div>
-            <div className="flex items-center text-gray-600">
-              <Icon name="Clock" size={20} className="mr-2 text-blue-600" />
-              <span>Пн-Сб: 10:00-19:00</span>
-            </div>
-            <div className="flex items-center text-gray-600">
-              <Icon name="MapPin" size={20} className="mr-2 text-blue-600" />
-              <span>П. Алексеева, 17, ТЦ "Золотые ворота"</span>
             </div>
           </div>
         </div>
