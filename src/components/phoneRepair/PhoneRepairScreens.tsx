@@ -117,7 +117,7 @@ const PhoneRepairScreens = () => {
                 <h3 className="text-lg font-bold text-blue-800">Гарантия качества</h3>
               </div>
               <ul className="text-sm text-blue-700 space-y-1">
-                <li>• Гарантия на экраны - 6 месяцев</li>
+                <li>• Гарантия на экраны - 1 месяц</li>
                 <li>• Только оригинальные запчасти</li>
                 <li>• Бесплатная диагностика при замене</li>
               </ul>
