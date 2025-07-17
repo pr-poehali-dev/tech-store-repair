@@ -129,7 +129,7 @@ const PhoneRepairScreens = () => {
                 <h3 className="text-lg font-bold text-green-800">Быстрый ремонт</h3>
               </div>
               <ul className="text-sm text-green-700 space-y-1">
-                <li>• Замена экрана за 30-60 минут</li>
+                <li>• Замена экрана за 2-3 часа</li>
                 <li>• Работаем без выходных</li>
                 <li>• Доставка экранов под заказ 1-3 дня</li>
               </ul>
