@@ -19,6 +19,7 @@ const MainHeader = () => {
           </div>
           <nav className="hidden md:flex space-x-8">
             <a href="/catalog" className="text-gray-700 hover:text-blue-600 font-medium">Компьютеры</a>
+            <a href="/laptops" className="text-gray-700 hover:text-blue-600 font-medium">Ноутбуки</a>
             <a href="/components" className="text-gray-700 hover:text-blue-600 font-medium">Комплектующие</a>
             <a href="/recycling" className="text-gray-700 hover:text-blue-600 font-medium">Выкуп техники</a>
             <a href="/3d-printing" className="text-gray-700 hover:text-blue-600 font-medium">3D печать</a>
