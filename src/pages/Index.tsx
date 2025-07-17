@@ -4,6 +4,8 @@ import HeroBanner from '@/components/home/HeroBanner';
 import FeaturesSection from '@/components/home/FeaturesSection';
 import PopularProducts from '@/components/home/PopularProducts';
 import RepairServices from '@/components/home/RepairServices';
+import RepairPrices from '@/components/home/RepairPrices';
+import ScreenPrices from '@/components/home/ScreenPrices';
 import ContactSection from '@/components/home/ContactSection';
 import Footer from '@/components/home/Footer';
 
@@ -16,6 +18,8 @@ const Index = () => {
       <FeaturesSection />
       <PopularProducts />
       <RepairServices />
+      <RepairPrices />
+      <ScreenPrices />
       <ContactSection />
       <Footer />
     </div>
