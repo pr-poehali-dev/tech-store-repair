@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Icon from '@/components/ui/icon';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
+import RepairCalculator from '@/components/repair/RepairCalculator';
 
 const PhoneRepair = () => {
+  const [isCalculatorOpen, setIsCalculatorOpen] = useState(false);
   const repairServices = [
     {
       name: "Диагностика",
@@ -142,7 +144,7 @@ const PhoneRepair = () => {
               <Icon name="Phone" size={20} className="mr-2" />
               Записаться на ремонт
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-green-600">
+            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-green-600" onClick={() => setIsCalculatorOpen(true)}>
               <Icon name="Calculator" size={20} className="mr-2" />
               Рассчитать стоимость
             </Button>
@@ -357,6 +359,12 @@ const PhoneRepair = () => {
           </div>
         </div>
       </footer>
+
+      {/* Calculator Modal */}
+      <RepairCalculator 
+        isOpen={isCalculatorOpen} 
+        onClose={() => setIsCalculatorOpen(false)} 
+      />
     </div>
   );
 };
