@@ -25,7 +25,7 @@ const TopHeader = () => {
               <Icon name="Phone" size={16} />
               <span className="whitespace-nowrap">+7 (924) 863-88-08</span>
             </a>
-            <span className="text-amber-600 text-xs">STL 3D</span>
+            <span className="text-amber-600 text-xs">d Enter14 3D</span>
           </div>
           <div className="flex items-center gap-4">
             <a href="#" className="text-blue-600 hover:text-blue-800">
@@ -39,11 +39,11 @@ const TopHeader = () => {
             <span>•</span>
             <a href="https://wa.me/79248638808" target="_blank" rel="noopener noreferrer" className="text-amber-600 hover:text-amber-800">
               <Icon name="MessageCircle" size={16} className="inline mr-1" />
-              STL 3D WA
+              d Enter14 3D WA
             </a>
             <a href="https://t.me/+79248638808" target="_blank" rel="noopener noreferrer" className="text-amber-600 hover:text-amber-800">
               <Icon name="Send" size={16} className="inline mr-1" />
-              STL 3D TG
+              d Enter14 3D TG
             </a>
           </div>
         </div>
