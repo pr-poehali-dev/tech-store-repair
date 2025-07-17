@@ -4,6 +4,21 @@ import Icon from '@/components/ui/icon';
 const Repair: React.FC = () => {
   const repairServices = [
     {
+      category: "Ремонт телефонов",
+      items: [
+        { name: "Диагностика", price: "от 300₽" },
+        { name: "Замена экрана (iPhone)", price: "от 3000₽" },
+        { name: "Замена экрана (Android)", price: "от 2000₽" },
+        { name: "Замена аккумулятора", price: "от 1500₽" },
+        { name: "Ремонт разъема зарядки", price: "от 1800₽" },
+        { name: "Замена камеры", price: "от 2500₽" },
+        { name: "Ремонт после попадания воды", price: "от 2000₽" },
+        { name: "Замена кнопок", price: "от 1200₽" },
+        { name: "Ремонт динамика/микрофона", price: "от 1000₽" },
+        { name: "Перепрошивка", price: "1500₽" }
+      ]
+    },
+    {
       category: "Ремонт компьютеров",
       items: [
         { name: "Диагностика неисправностей", price: "от 500₽" },
