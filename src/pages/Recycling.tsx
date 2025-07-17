@@ -146,6 +146,14 @@ export default function Recycling() {
                 <Icon name="Phone" size={18} />
                 <span>8 (924) 161-76-99</span>
               </a>
+              <a href="https://wa.me/79241617699" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-green-600 hover:text-green-800">
+                <Icon name="MessageCircle" size={16} />
+                <span>WhatsApp</span>
+              </a>
+              <a href="https://t.me/+79241617699" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-blue-600 hover:text-blue-800">
+                <Icon name="Send" size={16} />
+                <span>Telegram</span>
+              </a>
             </div>
           </div>
         </div>
@@ -291,10 +299,10 @@ export default function Recycling() {
       {/* Contact Info */}
       <div className="bg-gray-100 py-8">
         <div className="container mx-auto px-4 text-center">
-          <div className="flex items-center justify-center space-x-8">
+          <div className="flex flex-wrap items-center justify-center gap-6">
             <div className="flex items-center text-gray-600">
               <Icon name="Phone" size={20} className="mr-2 text-blue-600" />
-              <span>+7 (924) 161-76-99</span>
+              <span>8 (924) 161-76-99</span>
             </div>
             <div className="flex items-center text-gray-600">
               <Icon name="Clock" size={20} className="mr-2 text-blue-600" />
@@ -303,6 +311,16 @@ export default function Recycling() {
             <div className="flex items-center text-gray-600">
               <Icon name="MapPin" size={20} className="mr-2 text-blue-600" />
               <span>П. Алексеева, 17, ТЦ "Золотые ворота"</span>
+            </div>
+            <div className="flex items-center gap-4">
+              <a href="https://wa.me/79241617699" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-1 text-green-600 hover:text-green-800">
+                <Icon name="MessageCircle" size={18} />
+                <span>WhatsApp</span>
+              </a>
+              <a href="https://t.me/+79241617699" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-1 text-blue-600 hover:text-blue-800">
+                <Icon name="Send" size={18} />
+                <span>Telegram</span>
+              </a>
             </div>
           </div>
         </div>
