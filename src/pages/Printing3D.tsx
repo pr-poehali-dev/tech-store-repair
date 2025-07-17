@@ -319,8 +319,8 @@ export default function Printing3D() {
       <div className="bg-gray-100 py-8">
         <div className="container mx-auto px-4 text-center">
           <h3 className="text-lg font-semibold mb-4">Связаться с нами</h3>
-          <div className="flex items-center justify-center space-x-8">
-            <div className="flex items-center space-x-4">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+            <div className="flex items-center justify-center gap-4 flex-wrap">
               <div className="flex items-center text-gray-600">
                 <Icon name="Phone" size={20} className="mr-2 text-blue-600" />
                 <span className="whitespace-nowrap">+7 (924) 863-88-08</span>
