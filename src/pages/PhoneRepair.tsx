@@ -138,7 +138,7 @@ const PhoneRepair = () => {
             Замена экранов, батарей, разъемов. Гарантия на все виды работ.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold">
+            <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold" onClick={() => window.open('tel:89241617699')}>
               <Icon name="Phone" size={20} className="mr-2" />
               Записаться на ремонт
             </Button>
