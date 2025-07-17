@@ -88,10 +88,10 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
               <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                Ремонт <span className="text-yellow-400">телефонов</span> и компьютеров
+                Ремонт <span className="text-yellow-400">телефонов</span>, компьютеров и игровых приставок
               </h1>
               <p className="text-xl mb-6">
-                Сервисный центр по ремонту телефонов и компьютеров и комиссионный магазин компьютерной техники в Якутске
+                Сервисный центр по ремонту телефонов, компьютеров и игровых приставок. Комиссионный магазин компьютерной техники в Якутске
               </p>
               <div className="bg-gradient-to-r from-amber-400 to-yellow-500 text-black rounded-lg p-4 mb-8 max-w-md mx-auto lg:mx-0 border-2 border-yellow-400 shadow-lg">
                 <div className="flex items-center justify-center space-x-4">
