@@ -438,6 +438,7 @@ const Index = () => {
               <h4 className="font-semibold mb-4">Каталог</h4>
               <ul className="space-y-2 text-gray-400">
                 <li><a href="/catalog" className="hover:text-white transition-colors">Компьютеры</a></li>
+                <li><a href="/laptops" className="hover:text-white transition-colors">Ноутбуки</a></li>
                 <li><a href="/components" className="hover:text-white transition-colors">Комплектующие</a></li>
                 <li><a href="/recycling" className="hover:text-white transition-colors">Выкуп техники</a></li>
                 <li><a href="/3d-printing" className="hover:text-white transition-colors">3D печать</a></li>
