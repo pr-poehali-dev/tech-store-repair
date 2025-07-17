@@ -142,14 +142,10 @@ export default function Recycling() {
               <h1 className="text-2xl font-bold text-gray-900">Выкуп техники под утилизацию</h1>
             </div>
             <div className="flex items-center space-x-4">
-              <Button variant="outline" size="sm">
-                <Icon name="Calculator" size={16} className="mr-2" />
-                Калькулятор
-              </Button>
-              <Button variant="outline" size="sm">
-                <Icon name="Phone" size={16} className="mr-2" />
-                Вызвать оценщика
-              </Button>
+              <a href="tel:+79241617699" className="flex items-center space-x-2 text-blue-600 hover:text-blue-800">
+                <Icon name="Phone" size={18} />
+                <span>8 (924) 161-76-99</span>
+              </a>
             </div>
           </div>
         </div>
