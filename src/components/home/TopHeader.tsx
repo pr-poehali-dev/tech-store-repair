@@ -32,7 +32,7 @@ const TopHeader = () => {
               <Icon name="Clock" size={16} className="inline mr-1" />
               Пн-Сб: 10:00-19:00
             </a>
-            <a href="#" className="text-blue-600 hover:text-blue-800">
+            <a href="https://2gis.ru/yakutsk/firm/70000001048030975" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">
               <Icon name="MapPin" size={16} className="inline mr-1" />
               П. Алексеева, 17, ТЦ "Золотые ворота"
             </a>
