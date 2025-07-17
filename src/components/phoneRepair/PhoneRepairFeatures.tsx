@@ -7,7 +7,7 @@ const PhoneRepairFeatures = () => {
       icon: "Clock",
       color: "green",
       title: "Быстрый ремонт",
-      description: "30-60 минут на замену экрана"
+      description: "2-3 часа на замену экрана"
     },
     {
       icon: "Shield",
