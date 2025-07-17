@@ -160,7 +160,7 @@ export default function Catalog() {
           <div className="flex items-center justify-center space-x-8">
             <div className="flex items-center text-gray-600">
               <Icon name="Phone" size={20} className="mr-2 text-blue-600" />
-              <span>+7 (924) 161-76-99</span>
+              <span className="whitespace-nowrap">+7 (924) 161-76-99</span>
             </div>
             <div className="flex items-center text-gray-600">
               <Icon name="Clock" size={20} className="mr-2 text-blue-600" />

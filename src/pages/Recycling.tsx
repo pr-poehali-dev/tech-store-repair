@@ -144,7 +144,7 @@ export default function Recycling() {
             <div className="flex items-center space-x-4">
               <a href="tel:+79241617699" className="flex items-center space-x-2 text-blue-600 hover:text-blue-800">
                 <Icon name="Phone" size={18} />
-                <span>8 (924) 161-76-99</span>
+                <span className="whitespace-nowrap">8 (924) 161-76-99</span>
               </a>
               <a href="https://wa.me/79241617699" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-green-600 hover:text-green-800">
                 <Icon name="MessageCircle" size={16} />
@@ -302,7 +302,7 @@ export default function Recycling() {
           <div className="flex flex-wrap items-center justify-center gap-6">
             <div className="flex items-center text-gray-600">
               <Icon name="Phone" size={20} className="mr-2 text-blue-600" />
-              <span>8 (924) 161-76-99</span>
+              <span className="whitespace-nowrap">8 (924) 161-76-99</span>
             </div>
             <div className="flex items-center text-gray-600">
               <Icon name="Clock" size={20} className="mr-2 text-blue-600" />

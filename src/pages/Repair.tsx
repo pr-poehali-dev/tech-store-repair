@@ -87,7 +87,7 @@ const Repair: React.FC = () => {
             <div className="flex items-center space-x-4">
               <div className="flex items-center space-x-2">
                 <Icon name="Phone" size={18} className="text-blue-600" />
-                <span className="text-gray-700">8 (924) 161-76-99</span>
+                <span className="text-gray-700 whitespace-nowrap">8 (924) 161-76-99</span>
               </div>
               <a href="https://wa.me/79241617699" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-1 text-green-600 hover:text-green-800">
                 <Icon name="MessageCircle" size={16} />
@@ -186,7 +186,7 @@ const Repair: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <div className="flex items-center space-x-2">
               <Icon name="Phone" size={20} />
-              <span className="text-lg font-semibold">8 (924) 161-76-99</span>
+              <span className="text-lg font-semibold whitespace-nowrap">8 (924) 161-76-99</span>
             </div>
             <div className="flex items-center space-x-2">
               <Icon name="Clock" size={20} />
@@ -227,7 +227,7 @@ const Repair: React.FC = () => {
             <div>
               <h4 className="font-semibold mb-4">Контакты</h4>
               <div className="text-gray-300 space-y-2">
-                <p>8 (924) 161-76-99</p>
+                <p className="whitespace-nowrap">8 (924) 161-76-99</p>
                 <p>info@enter14.ru</p>
                 <p>г. Якутск, ул. П. Алексеева, 17</p>
                 <div className="flex gap-2 mt-2">

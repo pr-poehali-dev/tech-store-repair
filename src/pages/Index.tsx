@@ -13,7 +13,7 @@ const Index = () => {
             <div className="flex items-center gap-4">
               <a href="tel:+79241617699" className="flex items-center gap-2 text-blue-600 hover:text-blue-800">
                 <Icon name="Phone" size={16} />
-                +7 (924) 161-76-99
+                <span className="whitespace-nowrap">+7 (924) 161-76-99</span>
               </a>
               <span>•</span>
               <a href="https://wa.me/79241617699" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-green-600 hover:text-green-800">
@@ -28,7 +28,7 @@ const Index = () => {
               <span>•</span>
               <a href="tel:+79248638808" className="flex items-center gap-2 text-amber-600 hover:text-amber-800">
                 <Icon name="Phone" size={16} />
-                +7 (924) 863-88-08
+                <span className="whitespace-nowrap">+7 (924) 863-88-08</span>
               </a>
               <span className="text-amber-600 text-xs">STL 3D</span>
             </div>
@@ -386,7 +386,7 @@ const Index = () => {
                   <Icon name="Phone" className="text-techGreen" size={32} />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Телефон</h3>
-                <p className="text-gray-600">+7 (924) 161-76-99<br />Пн-Сб: 10:00-19:00</p>
+                <p className="text-gray-600"><span className="whitespace-nowrap">+7 (924) 161-76-99</span><br />Пн-Сб: 10:00-19:00</p>
               </CardContent>
             </Card>
             <Card className="text-center hover:shadow-lg transition-shadow">
@@ -407,7 +407,7 @@ const Index = () => {
                   <Icon name="Printer" className="text-amber-600" size={32} />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">STL 3D</h3>
-                <p className="text-gray-600">+7 (924) 863-88-08<br />
+                <p className="text-gray-600"><span className="whitespace-nowrap">+7 (924) 863-88-08</span><br />
                   <a href="https://wa.me/79248638808" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-800 mr-2">
                     <Icon name="MessageCircle" size={16} className="inline mr-1" />
                     WhatsApp
@@ -456,7 +456,7 @@ const Index = () => {
             <div>
               <h4 className="font-semibold mb-4">Контакты</h4>
               <div className="space-y-2 text-gray-400">
-                <div>+7 (924) 161-76-99</div>
+                <div className="whitespace-nowrap">+7 (924) 161-76-99</div>
                 <div>Пн-Сб: 10:00-19:00</div>
                 <div className="flex gap-2">
                   <a href="https://wa.me/79241617699" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300">
@@ -469,7 +469,7 @@ const Index = () => {
                   </a>
                 </div>
                 <div className="text-amber-400 text-sm font-medium">STL 3D:</div>
-                <div>+7 (924) 863-88-08</div>
+                <div className="whitespace-nowrap">+7 (924) 863-88-08</div>
                 <div className="flex gap-2">
                   <a href="https://wa.me/79248638808" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300">
                     <Icon name="MessageCircle" size={16} className="inline mr-1" />
