@@ -97,6 +97,10 @@ const Repair: React.FC = () => {
                 <Icon name="Send" size={16} />
                 <span className="text-sm">Telegram</span>
               </a>
+              <a href="https://vk.com/entercom_ykt" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-1 text-blue-600 hover:text-blue-800">
+                <Icon name="Users" size={16} />
+                <span className="text-sm">VK</span>
+              </a>
             </div>
           </nav>
         </div>
@@ -172,7 +176,7 @@ const Repair: React.FC = () => {
             <li>• Диагностика входит в стоимость ремонта при его выполнении</li>
             <li>• Цены на запчасти рассчитываются индивидуально</li>
             <li>• Сроки ремонта зависят от сложности и наличия запчастей</li>
-            <li>• При отказе от ремонта диагностика оплачивается отдельно</li>
+
             <li>• Гарантия не распространяется на механические повреждения</li>
           </ul>
         </div>
@@ -200,6 +204,10 @@ const Repair: React.FC = () => {
               <a href="https://t.me/+79241617699" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-1 text-blue-400 hover:text-blue-300">
                 <Icon name="Send" size={18} />
                 <span>Telegram</span>
+              </a>
+              <a href="https://vk.com/entercom_ykt" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-1 text-blue-400 hover:text-blue-300">
+                <Icon name="Users" size={18} />
+                <span>VK</span>
               </a>
             </div>
           </div>
@@ -238,6 +246,14 @@ const Repair: React.FC = () => {
                   <a href="https://t.me/+79241617699" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300">
                     <Icon name="Send" size={16} className="inline mr-1" />
                     TG
+                  </a>
+                  <a href="https://vk.com/entercom_ykt" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300">
+                    <Icon name="Users" size={16} className="inline mr-1" />
+                    VK
+                  </a>
+                  <a href="https://vk.com/entercom_ykt" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300">
+                    <Icon name="Users" size={16} className="inline mr-1" />
+                    VK
                   </a>
                 </div>
               </div>
