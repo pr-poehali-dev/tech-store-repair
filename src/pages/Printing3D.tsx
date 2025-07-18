@@ -289,6 +289,12 @@ export default function Printing3D() {
                 Минимальный заказ - 800 рублей.
               </p>
             </div>
+            <div className="flex items-start space-x-2">
+              <Icon name="Calculator" size={16} className="text-amber-600 mt-0.5" />
+              <p className="text-sm text-amber-800">
+                Если хотите узнать примерную стоимость детали, то можете взвешать вашу деталь на весах и умножить на стоимость услуги + проектировка 500 руб.
+              </p>
+            </div>
           </CardContent>
         </Card>
 
