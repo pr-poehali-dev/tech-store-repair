@@ -46,6 +46,10 @@ const Footer = () => {
                   <Icon name="Send" size={16} className="inline mr-1" />
                   TG
                 </a>
+                <a href="https://vk.com/entercom_ykt" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300">
+                  <Icon name="Users" size={16} className="inline mr-1" />
+                  VK
+                </a>
               </div>
               <div className="text-amber-400 text-sm font-medium">STL 3D:</div>
               <div className="whitespace-nowrap">+7 (924) 863-88-08</div>

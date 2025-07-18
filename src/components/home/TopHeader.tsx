@@ -21,6 +21,11 @@ const TopHeader = () => {
               Telegram
             </a>
             <span>•</span>
+            <a href="https://vk.com/entercom_ykt" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-blue-600 hover:text-blue-800">
+              <Icon name="Users" size={16} />
+              VK
+            </a>
+            <span>•</span>
             <a href="tel:+79248638808" className="flex items-center gap-2 text-amber-600 hover:text-amber-800">
               <Icon name="Phone" size={16} />
               <span className="whitespace-nowrap">+7 (924) 863-88-08</span>
