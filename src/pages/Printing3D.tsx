@@ -245,46 +245,6 @@ export default function Printing3D() {
           )}
         </div>
 
-        {/* Examples Gallery */}
-        <h2 className="text-2xl font-bold mb-6">Примеры готовых работ</h2>
-        <div className="grid md:grid-cols-3 gap-6 mb-12">
-          <Card className="overflow-hidden">
-            <img 
-              src="/img/2994435b-e428-4033-a3ec-86da8deabc34.jpg" 
-              alt="Инженерные детали FDM печать"
-              className="w-full h-48 object-cover"
-            />
-            <CardContent className="p-4">
-              <h3 className="font-semibold mb-2">Технические детали (FDM)</h3>
-              <p className="text-sm text-gray-600">Корпуса, шестерни, функциональные компоненты из инженерного пластика</p>
-            </CardContent>
-          </Card>
-          
-          <Card className="overflow-hidden">
-            <img 
-              src="/img/6aa6eab8-3ac7-4605-bc41-e3e01438b6a3.jpg" 
-              alt="Детализированные модели SLA печать"
-              className="w-full h-48 object-cover"
-            />
-            <CardContent className="p-4">
-              <h3 className="font-semibold mb-2">Художественные модели (SLA)</h3>
-              <p className="text-sm text-gray-600">Миниатюры, архитектурные макеты, высокодетализированные изделия</p>
-            </CardContent>
-          </Card>
-          
-          <Card className="overflow-hidden">
-            <img 
-              src="/img/afa97ecc-5e20-44b9-9a39-e75f46514fff.jpg" 
-              alt="Прототипы и обработка"
-              className="w-full h-48 object-cover"
-            />
-            <CardContent className="p-4">
-              <h3 className="font-semibold mb-2">Прототипы и обработка</h3>
-              <p className="text-sm text-gray-600">Примеры до и после постобработки, готовые изделия</p>
-            </CardContent>
-          </Card>
-        </div>
-
         {/* Additional Services */}
         <h2 className="text-2xl font-bold mb-6">Дополнительные услуги</h2>
         <div className="grid md:grid-cols-2 gap-6 mb-12">
@@ -331,6 +291,58 @@ export default function Printing3D() {
             </div>
           </CardContent>
         </Card>
+
+        {/* Examples Gallery */}
+        <h2 className="text-2xl font-bold mb-6 mt-12">Примеры готовых работ</h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <Card className="overflow-hidden">
+            <img 
+              src="/img/2994435b-e428-4033-a3ec-86da8deabc34.jpg" 
+              alt="Инженерные детали FDM печать"
+              className="w-full h-48 object-cover"
+            />
+            <CardContent className="p-4">
+              <h3 className="font-semibold mb-2">Технические детали (FDM)</h3>
+              <p className="text-sm text-gray-600">Корпуса, шестерни, функциональные компоненты из инженерного пластика</p>
+            </CardContent>
+          </Card>
+          
+          <Card className="overflow-hidden">
+            <img 
+              src="/img/6aa6eab8-3ac7-4605-bc41-e3e01438b6a3.jpg" 
+              alt="Детализированные модели SLA печать"
+              className="w-full h-48 object-cover"
+            />
+            <CardContent className="p-4">
+              <h3 className="font-semibold mb-2">Художественные модели (SLA)</h3>
+              <p className="text-sm text-gray-600">Миниатюры, архитектурные макеты, высокодетализированные изделия</p>
+            </CardContent>
+          </Card>
+
+          <Card className="overflow-hidden">
+            <img 
+              src="/img/a4f507ee-0eae-47fa-8b68-8b184b7c4cfa.jpg" 
+              alt="Фигурки SLA печать"
+              className="w-full h-48 object-cover"
+            />
+            <CardContent className="p-4">
+              <h3 className="font-semibold mb-2">Фигурки (SLA)</h3>
+              <p className="text-sm text-gray-600">Коллекционные фигурки, игровые миниатюры с высокой детализацией</p>
+            </CardContent>
+          </Card>
+          
+          <Card className="overflow-hidden">
+            <img 
+              src="/img/afa97ecc-5e20-44b9-9a39-e75f46514fff.jpg" 
+              alt="Прототипы и обработка"
+              className="w-full h-48 object-cover"
+            />
+            <CardContent className="p-4">
+              <h3 className="font-semibold mb-2">Прототипы и обработка</h3>
+              <p className="text-sm text-gray-600">Примеры до и после постобработки, готовые изделия</p>
+            </CardContent>
+          </Card>
+        </div>
       </div>
 
       {/* Contact Info */}
