@@ -8,68 +8,71 @@ import { useState } from 'react';
 const materials = [
   {
     id: 1,
-    name: "PETG пластик",
-    price: "22",
-    unit: "₽/г",
-    image: "/api/placeholder/300/250",
-    specs: ["Химически стойкий", "Пищевой", "Легко обрабатывается"],
-    badge: null,
-    category: "Стандарт"
+    name: "Инженерный пластик (FDM)",
+    priceSmall: "20",
+    priceLarge: "15",
+    unit: "руб/гр",
+    description: "Этот тип пластика подходит в основном для технических целей, когда необходима прочность и стойкость к агрессивным средам. Например корпуса, шестерёнки.",
+    category: "FDM",
+    technology: "FDM"
   },
   {
     id: 2,
-    name: "TPU (гибкий)",
-    price: "35",
-    unit: "₽/г",
-    image: "/api/placeholder/300/250",
-    specs: ["Эластичный", "Износостойкий", "Для чехлов", "Разные твердости"],
-    badge: "Специальный",
-    category: "Гибкий"
-  }
-];
-
-const services = [
-  {
-    id: 1,
-    name: "Стандартная печать",
-    price: "100",
-    unit: "₽/час",
-    description: "Качество 0.2мм, обычная скорость",
-    features: ["PLA/ABS/PETG", "Размер до 220x220x250мм", "Стандартные настройки"]
-  },
-  {
-    id: 2,
-    name: "Высокое качество",
-    price: "150",
-    unit: "₽/час",
-    description: "Качество 0.1мм, медленная печать",
-    features: ["Мелкие детали", "Гладкая поверхность", "Точность ±0.1мм"]
+    name: "Обычный пластик (FDM)",
+    priceSmall: "15",
+    priceLarge: "10",
+    unit: "руб/гр",
+    description: "",
+    category: "FDM",
+    technology: "FDM"
   },
   {
     id: 3,
-    name: "Быстрая печать",
-    price: "80",
-    unit: "₽/час",
-    description: "Качество 0.3мм, высокая скорость",
-    features: ["Прототипы", "Черновики", "Быстрый результат"]
+    name: "Фотополимерный пластик (SLA)",
+    priceSmall: "25",
+    priceLarge: "20",
+    unit: "руб/мл",
+    description: "Этот тип пластика подходит для художественных и детализированных моделей. Например, фигура человека, дома и пр.",
+    category: "SLA",
+    technology: "SLA"
+  }
+];
+
+const additionalServices = [
+  {
+    id: 1,
+    name: "3D-моделирование",
+    price: "от 300-1500",
+    unit: "руб",
+    description: "Создание 3D модели по чертежам с размерами. Редактирование сканированной модели"
+  },
+  {
+    id: 2,
+    name: "Обработка детали",
+    price: "от 50-800",
+    unit: "руб",
+    description: "Зависит от объёма работы. Обработка включает в себя склеивание, шлифовка и установка деталей"
+  },
+  {
+    id: 3,
+    name: "Выезд на замер",
+    price: "от 500",
+    unit: "руб",
+    description: "Зависит от отдалённости и сложности замеров"
   },
   {
     id: 4,
-    name: "Постобработка",
-    price: "200",
-    unit: "₽/час",
-    description: "Шлифовка, покраска, сборка",
-    features: ["Удаление поддержек", "Шлифовка", "Покраска", "Склейка деталей"]
+    name: "Сканирование",
+    price: "1000",
+    unit: "руб",
+    description: "Сканирование объекта без обработки"
   }
 ];
 
 const categories = [
   "Все материалы",
-  "Стандарт",
-  "Гибкий",
-  "Декоративный",
-  "Композит",
-  "Специальный"
+  "FDM",
+  "SLA"
 ];
 
 export default function Printing3D() {
@@ -79,7 +82,7 @@ export default function Printing3D() {
 
   const filteredMaterials = materials.filter(material => {
     const matchesSearch = material.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                         material.specs.some(spec => spec.toLowerCase().includes(searchTerm.toLowerCase()));
+                         material.description.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesCategory = selectedCategory === 'Все материалы' || material.category === selectedCategory;
     return matchesSearch && matchesCategory;
   });
@@ -214,28 +217,34 @@ export default function Printing3D() {
               <p className="text-sm">Попробуйте изменить поисковый запрос или категорию</p>
             </div>
           ) : (
-            <ul className="list-disc list-inside space-y-2">
+            <div className="space-y-6">
               {filteredMaterials.map((material) => (
-                <li key={material.id} className="text-lg">
-                  <span className="font-semibold">{material.name}</span> - {material.price} {material.unit}
-                  {material.badge && (
-                    <Badge className="ml-2 bg-red-500 text-white text-xs">
-                      {material.badge}
-                    </Badge>
-                  )}
-                  <div className="ml-4 mt-1 text-sm text-gray-600">
-                    {material.specs.join(', ')}
+                <Card key={material.id} className="p-6">
+                  <div className="flex justify-between items-start mb-4">
+                    <div>
+                      <h3 className="text-xl font-semibold">{material.name}</h3>
+                      <Badge className="mt-2 bg-blue-100 text-blue-800">{material.technology}</Badge>
+                    </div>
+                    <div className="text-right">
+                      <div className="text-sm text-gray-600">Цена до 99 гр</div>
+                      <div className="text-lg font-bold">{material.priceSmall} {material.unit}</div>
+                      <div className="text-sm text-gray-600 mt-1">Цена от 100 гр</div>
+                      <div className="text-lg font-bold">{material.priceLarge} {material.unit}</div>
+                    </div>
                   </div>
-                </li>
+                  {material.description && (
+                    <p className="text-gray-700">{material.description}</p>
+                  )}
+                </Card>
               ))}
-            </ul>
+            </div>
           )}
         </div>
 
-        {/* Services */}
-        <h2 className="text-2xl font-bold mb-6">Услуги печати</h2>
+        {/* Additional Services */}
+        <h2 className="text-2xl font-bold mb-6">Дополнительные услуги</h2>
         <div className="grid md:grid-cols-2 gap-6 mb-12">
-          {services.map((service) => (
+          {additionalServices.map((service) => (
             <Card key={service.id} className="hover:shadow-lg transition-shadow">
               <CardHeader>
                 <div className="flex justify-between items-start">
@@ -248,16 +257,6 @@ export default function Printing3D() {
                   </div>
                 </div>
               </CardHeader>
-              <CardContent>
-                <div className="space-y-2">
-                  {service.features.map((feature, index) => (
-                    <div key={index} className="text-sm text-gray-600 flex items-center">
-                      <Icon name="CheckCircle" size={12} className="mr-2 text-green-500" />
-                      {feature}
-                    </div>
-                  ))}
-                </div>
-              </CardContent>
             </Card>
           ))}
         </div>
