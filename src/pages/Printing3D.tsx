@@ -343,6 +343,94 @@ export default function Printing3D() {
             </CardContent>
           </Card>
         </div>
+
+        {/* Materials Description */}
+        <h2 className="text-2xl font-bold mb-6 mt-12">Описание пластиков для 3D печати</h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          <Card className="p-6">
+            <h3 className="text-xl font-semibold mb-3 text-blue-600">PLA</h3>
+            <p className="text-gray-700 text-sm mb-3">
+              Биоразлагаемый пластик на основе кукурузного крахмала. Самый популярный материал для начинающих.
+            </p>
+            <ul className="text-sm text-gray-600 space-y-1">
+              <li>• Низкая температура печати (190-220°C)</li>
+              <li>• Экологичный и безопасный</li>
+              <li>• Легко печатается, минимум деформаций</li>
+              <li>• Широкая палитра цветов</li>
+              <li>• Хрупкий при низких температурах</li>
+            </ul>
+          </Card>
+
+          <Card className="p-6">
+            <h3 className="text-xl font-semibold mb-3 text-red-600">ABS</h3>
+            <p className="text-gray-700 text-sm mb-3">
+              Прочный термопластик, используемый в автомобильной промышленности и производстве игрушек (LEGO).
+            </p>
+            <ul className="text-sm text-gray-600 space-y-1">
+              <li>• Высокая прочность и гибкость</li>
+              <li>• Термостойкость до 80°C</li>
+              <li>• Химическая стойкость</li>
+              <li>• Можно сваривать ацетоном</li>
+              <li>• Требует подогрев стола и закрытую камеру</li>
+            </ul>
+          </Card>
+
+          <Card className="p-6">
+            <h3 className="text-xl font-semibold mb-3 text-green-600">PETG</h3>
+            <p className="text-gray-700 text-sm mb-3">
+              Модифицированный PET с добавлением гликоля. Сочетает простоту печати PLA с прочностью ABS.
+            </p>
+            <ul className="text-sm text-gray-600 space-y-1">
+              <li>• Прозрачность и блеск</li>
+              <li>• Химическая стойкость</li>
+              <li>• Пищевая безопасность</li>
+              <li>• Легко печатается без деформаций</li>
+              <li>• Хорошая ударопрочность</li>
+            </ul>
+          </Card>
+
+          <Card className="p-6">
+            <h3 className="text-xl font-semibold mb-3 text-purple-600">TPU</h3>
+            <p className="text-gray-700 text-sm mb-3">
+              Термопластичный полиуретан. Гибкий материал для печати эластичных изделий.
+            </p>
+            <ul className="text-sm text-gray-600 space-y-1">
+              <li>• Высокая эластичность и гибкость</li>
+              <li>• Износостойкость</li>
+              <li>• Химическая стойкость</li>
+              <li>• Разные степени жесткости (Shore A)</li>
+              <li>• Медленная печать, требует настройки</li>
+            </ul>
+          </Card>
+
+          <Card className="p-6">
+            <h3 className="text-xl font-semibold mb-3 text-gray-800">PA6-CF</h3>
+            <p className="text-gray-700 text-sm mb-3">
+              Нейлон 6 с углеволокном. Композитный материал для высоконагруженных деталей.
+            </p>
+            <ul className="text-sm text-gray-600 space-y-1">
+              <li>• Исключительная прочность</li>
+              <li>• Легкий вес</li>
+              <li>• Высокая жесткость</li>
+              <li>• Термостойкость до 150°C</li>
+              <li>• Требует специальное сопло</li>
+            </ul>
+          </Card>
+
+          <Card className="p-6">
+            <h3 className="text-xl font-semibold mb-3 text-amber-600">NYLON</h3>
+            <p className="text-gray-700 text-sm mb-3">
+              Полиамид. Инженерный пластик с отличными механическими свойствами.
+            </p>
+            <ul className="text-sm text-gray-600 space-y-1">
+              <li>• Высокая прочность на разрыв</li>
+              <li>• Отличная износостойкость</li>
+              <li>• Химическая стойкость</li>
+              <li>• Низкий коэффициент трения</li>
+              <li>• Требует сушку перед печатью</li>
+            </ul>
+          </Card>
+        </div>
       </div>
 
       {/* Contact Info */}
