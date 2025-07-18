@@ -286,7 +286,7 @@ export default function Printing3D() {
             <div className="flex items-start space-x-2">
               <Icon name="AlertCircle" size={16} className="text-amber-600 mt-0.5" />
               <p className="text-sm text-amber-800">
-                Минимальный заказ - 200 рублей. Скидки при заказе от 2000 рублей.
+                Минимальный заказ - 800 рублей.
               </p>
             </div>
           </CardContent>
