@@ -226,9 +226,13 @@ export default function Printing3D() {
                       <Badge className="mt-2 bg-blue-100 text-blue-800">{material.technology}</Badge>
                     </div>
                     <div className="text-right">
-                      <div className="text-sm text-gray-600">Цена до 99 гр</div>
+                      <div className="text-sm text-gray-600">
+                        {material.technology === 'SLA' ? 'Цена до 99 мл' : 'Цена до 99 гр'}
+                      </div>
                       <div className="text-lg font-bold">{material.priceSmall} {material.unit}</div>
-                      <div className="text-sm text-gray-600 mt-1">Цена от 100 гр</div>
+                      <div className="text-sm text-gray-600 mt-1">
+                        {material.technology === 'SLA' ? 'Цена от 100 мл' : 'Цена от 100 гр'}
+                      </div>
                       <div className="text-lg font-bold">{material.priceLarge} {material.unit}</div>
                     </div>
                   </div>
