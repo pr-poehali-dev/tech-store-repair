@@ -42,7 +42,7 @@ const additionalServices = [
   {
     id: 1,
     name: "3D-моделирование",
-    price: "от 300-1500",
+    price: "от 500",
     unit: "руб",
     description: "Создание 3D модели по чертежам с размерами. Редактирование сканированной модели"
   },
@@ -63,7 +63,7 @@ const additionalServices = [
   {
     id: 4,
     name: "Сканирование",
-    price: "1000",
+    price: "от 1000",
     unit: "руб",
     description: "Сканирование объекта без обработки"
   }
