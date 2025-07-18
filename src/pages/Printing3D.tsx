@@ -8,36 +8,16 @@ import { useState } from 'react';
 const materials = [
   {
     id: 1,
-    name: "PLA пластик",
-    price: "15",
-    unit: "₽/г",
-    image: "/api/placeholder/300/250",
-    specs: ["Экологичный", "Легко печатается", "Разные цвета", "Низкая температура"],
-    badge: "Популярно",
-    category: "Стандарт"
-  },
-  {
-    id: 2,
-    name: "ABS пластик",
-    price: "18",
-    unit: "₽/г",
-    image: "/api/placeholder/300/250",
-    specs: ["Прочный", "Термостойкий", "Гибкий", "Для функциональных деталей"],
-    badge: null,
-    category: "Стандарт"
-  },
-  {
-    id: 3,
     name: "PETG пластик",
     price: "22",
     unit: "₽/г",
     image: "/api/placeholder/300/250",
-    specs: ["Прозрачный", "Химически стойкий", "Пищевой", "Легко обрабатывается"],
+    specs: ["Химически стойкий", "Пищевой", "Легко обрабатывается"],
     badge: null,
     category: "Стандарт"
   },
   {
-    id: 4,
+    id: 2,
     name: "TPU (гибкий)",
     price: "35",
     unit: "₽/г",
@@ -45,46 +25,6 @@ const materials = [
     specs: ["Эластичный", "Износостойкий", "Для чехлов", "Разные твердости"],
     badge: "Специальный",
     category: "Гибкий"
-  },
-  {
-    id: 5,
-    name: "Wood Fill",
-    price: "28",
-    unit: "₽/г",
-    image: "/api/placeholder/300/250",
-    specs: ["Имитация дерева", "Можно шлифовать", "Натуральный запах", "Под покраску"],
-    badge: null,
-    category: "Декоративный"
-  },
-  {
-    id: 6,
-    name: "Carbon Fiber",
-    price: "45",
-    unit: "₽/г",
-    image: "/api/placeholder/300/250",
-    specs: ["Углеволокно", "Сверхпрочный", "Легкий", "Для нагруженных деталей"],
-    badge: "Премиум",
-    category: "Композит"
-  },
-  {
-    id: 7,
-    name: "Metal Fill",
-    price: "38",
-    unit: "₽/г",
-    image: "/api/placeholder/300/250",
-    specs: ["Имитация металла", "Тяжелый", "Можно полировать", "Бронза/Медь/Сталь"],
-    badge: null,
-    category: "Декоративный"
-  },
-  {
-    id: 8,
-    name: "Прозрачный PETG",
-    price: "25",
-    unit: "₽/г",
-    image: "/api/placeholder/300/250",
-    specs: ["Кристально чистый", "Для оптики", "Высокая прозрачность", "Не желтеет"],
-    badge: null,
-    category: "Специальный"
   }
 ];
 
@@ -263,57 +203,32 @@ export default function Printing3D() {
         </div>
       </div>
 
-      {/* Materials Grid */}
+      {/* Materials List */}
       <div className="container mx-auto px-4 py-8">
         <h2 className="text-2xl font-bold mb-6">Материалы для 3D печати</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-12">
+        <div className="space-y-4 mb-12">
           {filteredMaterials.length === 0 ? (
-            <div className="col-span-full text-center py-8 text-gray-500">
+            <div className="text-center py-8 text-gray-500">
               <Icon name="Search" size={48} className="mx-auto mb-4 text-gray-300" />
               <p>Материалы не найдены</p>
               <p className="text-sm">Попробуйте изменить поисковый запрос или категорию</p>
             </div>
           ) : (
-            filteredMaterials.map((material) => (
-            <Card key={material.id} className="overflow-hidden hover:shadow-lg transition-shadow group">
-              <div className="relative">
-                <img 
-                  src={material.image} 
-                  alt={material.name}
-                  className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                {material.badge && (
-                  <Badge className="absolute top-2 left-2 bg-red-500 text-white text-xs">
-                    {material.badge}
-                  </Badge>
-                )}
-                <Badge className="absolute top-2 right-2 bg-blue-500 text-white text-xs">
-                  {material.category}
-                </Badge>
-              </div>
-              
-              <CardHeader className="pb-2">
-                <CardTitle className="text-base">{material.name}</CardTitle>
-              </CardHeader>
-              
-              <CardContent className="space-y-2">
-                <div className="space-y-1">
-                  {material.specs.map((spec, index) => (
-                    <div key={index} className="text-xs text-gray-600 flex items-center">
-                      <Icon name="CheckCircle" size={10} className="mr-1 text-green-500" />
-                      {spec}
-                    </div>
-                  ))}
-                </div>
-                
-                <div className="text-center pt-2 border-t">
-                  <div className="text-lg font-bold text-gray-900">
-                    {material.price} {material.unit}
+            <ul className="list-disc list-inside space-y-2">
+              {filteredMaterials.map((material) => (
+                <li key={material.id} className="text-lg">
+                  <span className="font-semibold">{material.name}</span> - {material.price} {material.unit}
+                  {material.badge && (
+                    <Badge className="ml-2 bg-red-500 text-white text-xs">
+                      {material.badge}
+                    </Badge>
+                  )}
+                  <div className="ml-4 mt-1 text-sm text-gray-600">
+                    {material.specs.join(', ')}
                   </div>
-                </div>
-              </CardContent>
-            </Card>
-            ))
+                </li>
+              ))}
+            </ul>
           )}
         </div>
 
