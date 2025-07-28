@@ -18,16 +18,120 @@ const ScreenPrices = () => {
       ]
     },
     {
-      brand: "Samsung",
+      brand: "Samsung Galaxy S",
       icon: "Smartphone",
       color: "bg-blue-600",
       models: [
-        { name: "Galaxy S23 Ultra", glass: "3800 ₽", display: "7200 ₽", availability: "В наличии" },
-        { name: "Galaxy S23", glass: "3200 ₽", display: "6100 ₽", availability: "В наличии" },
-        { name: "Galaxy S22", glass: "2900 ₽", display: "5400 ₽", availability: "В наличии" },
-        { name: "Galaxy A54", glass: "2200 ₽", display: "3800 ₽", availability: "В наличии" },
-        { name: "Galaxy A34", glass: "1900 ₽", display: "3200 ₽", availability: "В наличии" },
-        { name: "Galaxy A24", glass: "1600 ₽", display: "2800 ₽", availability: "Под заказ" }
+        { name: "S23 Ultra", code: "", price: "21000 ₽", copy: "", availability: "В наличии" },
+        { name: "S23+", code: "S916B", price: "14000 ₽", copy: "", availability: "В наличии" },
+        { name: "S23", code: "S911B", price: "17000 ₽", copy: "", availability: "В наличии" },
+        { name: "S22 Ultra", code: "S908B", price: "20000 ₽", copy: "", availability: "В наличии" },
+        { name: "S22+", code: "S906B", price: "18000 ₽", copy: "", availability: "В наличии" },
+        { name: "S22", code: "S906B", price: "17000 ₽", copy: "", availability: "В наличии" }
+      ]
+    },
+    {
+      brand: "Samsung Galaxy S (продолжение)",
+      icon: "Smartphone",
+      color: "bg-blue-700",
+      models: [
+        { name: "S21 FE", code: "G990B", price: "11000 ₽", copy: "8000 ₽", availability: "В наличии" },
+        { name: "S21 Ultra", code: "G998B", price: "17000 ₽", copy: "", availability: "В наличии" },
+        { name: "S21+", code: "G996B", price: "12000 ₽", copy: "", availability: "В наличии" },
+        { name: "S21", code: "G991B", price: "15000 ₽", copy: "", availability: "В наличии" },
+        { name: "S20 FE/S20 FE 5G", code: "G780F/G781B", price: "10000 ₽", copy: "5200 ₽", availability: "В наличии" },
+        { name: "S20 Ultra", code: "G988B", price: "19000 ₽", copy: "", availability: "В наличии" }
+      ]
+    },
+    {
+      brand: "Samsung Galaxy S (старые)",
+      icon: "Smartphone", 
+      color: "bg-blue-800",
+      models: [
+        { name: "S20+", code: "G985F", price: "17000 ₽", copy: "", availability: "В наличии" },
+        { name: "S10 Lite", code: "G770F", price: "14000 ₽", copy: "", availability: "В наличии" },
+        { name: "S10+", code: "G075F", price: "19000 ₽", copy: "", availability: "В наличии" },
+        { name: "S10", code: "G973F", price: "19500 ₽", copy: "", availability: "В наличии" },
+        { name: "S10e", code: "G970F", price: "10000 ₽", copy: "", availability: "В наличии" },
+        { name: "S9+", code: "G965F", price: "10000 ₽", copy: "", availability: "В наличии" }
+      ]
+    },
+    {
+      brand: "Samsung Galaxy A (1)",
+      icon: "Smartphone",
+      color: "bg-green-600", 
+      models: [
+        { name: "A73", code: "А736 5G", price: "9500 ₽", copy: "", availability: "В наличии" },
+        { name: "A72", code: "A72", price: "9000 ₽", copy: "", availability: "В наличии" },
+        { name: "A71", code: "A715F", price: "8500 ₽", copy: "5500 ₽", availability: "В наличии" },
+        { name: "A70", code: "A705F", price: "8300 ₽", copy: "5500 ₽", availability: "В наличии" },
+        { name: "A54 5G", code: "A546E", price: "9000 ₽", copy: "5000 ₽", availability: "В наличии" },
+        { name: "A53 5G", code: "A536B", price: "8500 ₽", copy: "5000 ₽", availability: "В наличии" }
+      ]
+    },
+    {
+      brand: "Samsung Galaxy A (2)",
+      icon: "Smartphone",
+      color: "bg-green-700",
+      models: [
+        { name: "A52/A52 5G/A52s 5G", code: "A525F/A526B/A528B", price: "8000 ₽", copy: "5000 ₽", availability: "В наличии" },
+        { name: "A51", code: "A515F", price: "7000 ₽", copy: "4600 ₽", availability: "В наличии" },
+        { name: "A50", code: "A505F", price: "6800 ₽", copy: "", availability: "В наличии" },
+        { name: "A41", code: "A415F", price: "6800 ₽", copy: "", availability: "В наличии" },
+        { name: "A40", code: "A405F", price: "6800 ₽", copy: "", availability: "В наличии" },
+        { name: "A34 5G", code: "A346B", price: "9000 ₽", copy: "", availability: "В наличии" }
+      ]
+    },
+    {
+      brand: "Samsung Galaxy A (3)",
+      icon: "Smartphone",
+      color: "bg-green-800",
+      models: [
+        { name: "A33 5G", code: "A336B", price: "8500 ₽", copy: "4800 ₽", availability: "В наличии" },
+        { name: "A32", code: "A325F", price: "6800 ₽", copy: "5000 ₽", availability: "В наличии" },
+        { name: "A31", code: "A315F", price: "8500 ₽", copy: "5000 ₽", availability: "В наличии" },
+        { name: "A30s", code: "A307F", price: "6800 ₽", copy: "", availability: "В наличии" },
+        { name: "A30", code: "A305F", price: "6800 ₽", copy: "", availability: "В наличии" },
+        { name: "A24", code: "A245F", price: "7800 ₽", copy: "", availability: "В наличии" }
+      ]
+    },
+    {
+      brand: "Samsung Galaxy A (4)",
+      icon: "Smartphone",
+      color: "bg-teal-600",
+      models: [
+        { name: "A23", code: "A235F", price: "3400 ₽", copy: "", availability: "В наличии" },
+        { name: "A22s 5G", code: "A226B", price: "3700 ₽", copy: "", availability: "В наличии" },
+        { name: "A22", code: "A225F", price: "5800 ₽", copy: "", availability: "В наличии" },
+        { name: "A21s", code: "A217F", price: "3700 ₽", copy: "", availability: "В наличии" },
+        { name: "A20", code: "A205F", price: "6800 ₽", copy: "", availability: "В наличии" },
+        { name: "A14", code: "A145F", price: "3700 ₽", copy: "", availability: "В наличии" }
+      ]
+    },
+    {
+      brand: "Samsung Galaxy A (младшие)",
+      icon: "Smartphone",
+      color: "bg-teal-700",
+      models: [
+        { name: "A13", code: "A135F/A137F", price: "3800 ₽", copy: "", availability: "В наличии" },
+        { name: "A12", code: "A127F", price: "3500 ₽", copy: "", availability: "В наличии" },
+        { name: "A11", code: "A115F", price: "3700 ₽", copy: "", availability: "В наличии" },
+        { name: "A10s", code: "A107F", price: "3600 ₽", copy: "", availability: "В наличии" },
+        { name: "A10", code: "A105F", price: "3600 ₽", copy: "", availability: "В наличии" },
+        { name: "A04s", code: "A047F", price: "4000 ₽", copy: "", availability: "В наличии" }
+      ]
+    },
+    {
+      brand: "Samsung Galaxy A (бюджет)",
+      icon: "Smartphone",
+      color: "bg-teal-800",
+      models: [
+        { name: "A04", code: "A045F", price: "4000 ₽", copy: "", availability: "В наличии" },
+        { name: "A03s", code: "A037F", price: "3700 ₽", copy: "", availability: "В наличии" },
+        { name: "A03", code: "A035F", price: "3500 ₽", copy: "", availability: "В наличии" },
+        { name: "A02s", code: "A025F", price: "3600 ₽", copy: "", availability: "В наличии" },
+        { name: "A02", code: "A022G", price: "3600 ₽", copy: "", availability: "В наличии" },
+        { name: "A01", code: "A015F", price: "3500 ₽", copy: "", availability: "В наличии" }
       ]
     },
     {
@@ -70,7 +174,7 @@ const ScreenPrices = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {phoneScreens.map((brand, index) => (
             <Card key={index} className="hover:shadow-lg transition-shadow">
               <CardHeader className="pb-4">
@@ -88,9 +192,14 @@ const ScreenPrices = () => {
                   {brand.models.map((model, modelIndex) => (
                     <div key={modelIndex} className="border-b border-gray-100 pb-3 last:border-b-0">
                       <div className="flex justify-between items-start mb-2">
-                        <h4 className="text-sm font-medium text-gray-900">
-                          {model.name}
-                        </h4>
+                        <div>
+                          <h4 className="text-sm font-medium text-gray-900">
+                            {model.name}
+                          </h4>
+                          {(model as any).code && (
+                            <p className="text-xs text-gray-500">{(model as any).code}</p>
+                          )}
+                        </div>
                         <Badge 
                           variant={model.availability === "В наличии" ? "default" : "secondary"}
                           className="text-xs"
@@ -99,14 +208,30 @@ const ScreenPrices = () => {
                         </Badge>
                       </div>
                       <div className="space-y-1">
-                        <div className="flex justify-between text-xs">
-                          <span className="text-gray-600">Стекло:</span>
-                          <span className="font-bold text-green-600">{model.glass}</span>
-                        </div>
-                        <div className="flex justify-between text-xs">
-                          <span className="text-gray-600">Дисплей:</span>
-                          <span className="font-bold text-blue-600">{model.display}</span>
-                        </div>
+                        {(model as any).price && (
+                          <div className="flex justify-between text-xs">
+                            <span className="text-gray-600">Оригинал:</span>
+                            <span className="font-bold text-blue-600">{(model as any).price}</span>
+                          </div>
+                        )}
+                        {(model as any).copy && (
+                          <div className="flex justify-between text-xs">
+                            <span className="text-gray-600">Копия:</span>
+                            <span className="font-bold text-green-600">{(model as any).copy}</span>
+                          </div>
+                        )}
+                        {(model as any).glass && (
+                          <>
+                            <div className="flex justify-between text-xs">
+                              <span className="text-gray-600">Стекло:</span>
+                              <span className="font-bold text-green-600">{(model as any).glass}</span>
+                            </div>
+                            <div className="flex justify-between text-xs">
+                              <span className="text-gray-600">Дисплей:</span>
+                              <span className="font-bold text-blue-600">{(model as any).display}</span>
+                            </div>
+                          </>
+                        )}
                       </div>
                     </div>
                   ))}
