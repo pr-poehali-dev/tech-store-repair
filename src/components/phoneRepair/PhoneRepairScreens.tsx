@@ -225,6 +225,53 @@ const PhoneRepairScreens = () => {
       ]
     },
     {
+      brand: "iPhone замена задних стекол",
+      icon: "ShieldCheck",
+      color: "bg-purple-600",
+      models: [
+        { name: "iPhone 16 Pro Max", back_replacement: "3500₽", availability: "В наличии" },
+        { name: "iPhone 16 Pro", back_replacement: "3500₽", availability: "В наличии" },
+        { name: "iPhone 16", back_replacement: "3000₽", availability: "В наличии" },
+        { name: "iPhone 15 Pro Max", back_replacement: "3500₽", availability: "В наличии" },
+        { name: "iPhone 15 Pro", back_replacement: "3500₽", availability: "В наличии" },
+        { name: "iPhone 15", back_replacement: "3000₽", availability: "В наличии" },
+        { name: "iPhone 14 Pro Max", back_replacement: "3500₽", availability: "В наличии" },
+        { name: "iPhone 14 Pro", back_replacement: "3500₽", availability: "В наличии" },
+        { name: "iPhone 14 Plus", back_replacement: "3000₽", availability: "В наличии" }
+      ]
+    },
+    {
+      brand: "iPhone замена заднего стекла (средние)",
+      icon: "ShieldCheck", 
+      color: "bg-purple-700",
+      models: [
+        { name: "iPhone 14", back_replacement: "3000₽", availability: "В наличии" },
+        { name: "iPhone 13 Pro Max", back_replacement: "3000₽", availability: "В наличии" },
+        { name: "iPhone 13 Pro", back_replacement: "3000₽", availability: "В наличии" },
+        { name: "iPhone 13 mini", back_replacement: "2500₽", availability: "В наличии" },
+        { name: "iPhone 13", back_replacement: "2500₽", availability: "В наличии" },
+        { name: "iPhone 12 Pro Max", back_replacement: "3000₽", availability: "В наличии" },
+        { name: "iPhone 12 Pro", back_replacement: "2500₽", availability: "В наличии" },
+        { name: "iPhone 12", back_replacement: "2500₽", availability: "В наличии" },
+        { name: "iPhone 12 mini", back_replacement: "2500₽", availability: "В наличии" }
+      ]
+    },
+    {
+      brand: "iPhone замена заднего стекла (старые)",
+      icon: "ShieldCheck",
+      color: "bg-purple-800",
+      models: [
+        { name: "iPhone 11 Pro Max", back_replacement: "2500₽", availability: "В наличии" },
+        { name: "iPhone 11 Pro", back_replacement: "2500₽", availability: "В наличии" },
+        { name: "iPhone 11", back_replacement: "2000₽", availability: "В наличии" },
+        { name: "iPhone XS Max", back_replacement: "2500₽", availability: "В наличии" },
+        { name: "iPhone XS", back_replacement: "2000₽", availability: "В наличии" },
+        { name: "iPhone X", back_replacement: "2000₽", availability: "В наличии" },
+        { name: "iPhone 8 Plus", back_replacement: "1500₽", availability: "В наличии" },
+        { name: "iPhone 8", back_replacement: "1500₽", availability: "В наличии" }
+      ]
+    },
+    {
       brand: "Бюджетные экраны 2000₽",
       icon: "DollarSign",
       color: "bg-emerald-600",
@@ -316,6 +363,12 @@ const PhoneRepairScreens = () => {
                           <div className="flex justify-between text-xs">
                             <span className="text-gray-600">Замена:</span>
                             <span className="font-bold text-indigo-600">{(model as any).replacement}</span>
+                          </div>
+                        )}
+                        {(model as any).back_replacement && (
+                          <div className="flex justify-between text-xs">
+                            <span className="text-gray-600">Заднее стекло:</span>
+                            <span className="font-bold text-purple-600">{(model as any).back_replacement}</span>
                           </div>
                         )}
                         {(model as any).price && (
