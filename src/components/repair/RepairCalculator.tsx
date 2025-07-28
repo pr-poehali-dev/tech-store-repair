@@ -37,7 +37,7 @@ const RepairCalculator: React.FC<RepairCalculatorProps> = ({ isOpen, onClose }) 
   ];
 
   const repairTypes = [
-    { name: 'Диагностика', price: 300 },
+    { name: 'Диагностика', price: 0 },
     { name: 'Замена батареи', price: 3500 },
     { name: 'Ремонт разъема зарядки', price: 1800 },
     { name: 'Замена динамика/микрофона', price: 1000 },
@@ -259,7 +259,7 @@ const RepairCalculator: React.FC<RepairCalculatorProps> = ({ isOpen, onClose }) 
                     }}
                   >
                     <span>{repair.name}</span>
-                    <span className="font-bold">от {repair.price}₽</span>
+                    <span className="font-bold">{repair.price === 0 ? 'Бесплатно' : `от ${repair.price}₽`}</span>
                   </Button>
                 ))}
                 
