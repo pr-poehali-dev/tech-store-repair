@@ -38,7 +38,7 @@ const RepairCalculator: React.FC<RepairCalculatorProps> = ({ isOpen, onClose }) 
 
   const repairTypes = [
     { name: 'Диагностика', price: 300 },
-    { name: 'Замена батареи', price: 1500 },
+    { name: 'Замена батареи', price: 3500 },
     { name: 'Ремонт разъема зарядки', price: 1800 },
     { name: 'Замена динамика/микрофона', price: 1000 },
     { name: 'Замена кнопок', price: 1200 },
