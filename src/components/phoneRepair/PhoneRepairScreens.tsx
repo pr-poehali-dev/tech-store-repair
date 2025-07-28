@@ -175,6 +175,22 @@ const PhoneRepairScreens = () => {
         { name: "Redmi 12C", glass: "1200₽", display: "2100₽", availability: "В наличии" },
         { name: "POCO X5 Pro", glass: "1600₽", display: "2900₽", availability: "Под заказ" }
       ]
+    },
+    {
+      brand: "Бюджетные экраны 2000₽",
+      icon: "DollarSign",
+      color: "bg-emerald-600",
+      models: [
+        { name: "Samsung A10/A10s", glass: "", display: "2000₽", availability: "В наличии" },
+        { name: "Samsung A20/A30", glass: "", display: "2000₽", availability: "В наличии" },
+        { name: "Samsung A21s/A22", glass: "", display: "2000₽", availability: "В наличии" },
+        { name: "Samsung A12/A13", glass: "", display: "2000₽", availability: "В наличии" },
+        { name: "Xiaomi Redmi 9/9A", glass: "", display: "2000₽", availability: "В наличии" },
+        { name: "Xiaomi Redmi Note 8", glass: "", display: "2000₽", availability: "В наличии" },
+        { name: "Huawei Y6/Y7", glass: "", display: "2000₽", availability: "В наличии" },
+        { name: "Honor 8S/9S", glass: "", display: "2000₽", availability: "В наличии" },
+        { name: "Realme C11/C15", glass: "", display: "2000₽", availability: "В наличии" }
+      ]
     }
   ];
 
