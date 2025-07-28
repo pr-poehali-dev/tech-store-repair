@@ -6,19 +6,65 @@ import Icon from '@/components/ui/icon';
 const PhoneRepairScreens = () => {
   const screenPrices = [
     {
-      brand: "iPhone",
+      brand: "iPhone (новые)",
       icon: "Smartphone",
       color: "bg-gray-800",
       models: [
-        { name: "iPhone 14 Pro Max", glass: "4500₽", display: "8500₽", availability: "В наличии" },
-        { name: "iPhone 14 Pro", glass: "4200₽", display: "7800₽", availability: "В наличии" },
-        { name: "iPhone 14", glass: "3800₽", display: "6500₽", availability: "В наличии" },
-        { name: "iPhone 13 Pro", glass: "3800₽", display: "6900₽", availability: "В наличии" },
-        { name: "iPhone 13", glass: "3400₽", display: "5800₽", availability: "В наличии" },
-        { name: "iPhone 12", glass: "3200₽", display: "5500₽", availability: "В наличии" },
-        { name: "iPhone 11", glass: "2800₽", display: "4800₽", availability: "В наличии" },
-        { name: "iPhone XR", glass: "2400₽", display: "4200₽", availability: "Под заказ" },
-        { name: "iPhone X", glass: "2200₽", display: "3900₽", availability: "Под заказ" }
+        { name: "iPhone 16 Pro Max", original: "33000₽", copy: "", battery: "3500₽", rear_glass: "2800₽", availability: "В наличии" },
+        { name: "iPhone 16 Pro", original: "29000₽", copy: "15000₽", battery: "3500₽", rear_glass: "2800₽", availability: "В наличии" },
+        { name: "iPhone 16", original: "28000₽", copy: "", battery: "2500₽", rear_glass: "2400₽", availability: "В наличии" },
+        { name: "iPhone 15+", original: "14000₽", copy: "", battery: "2500₽", rear_glass: "1500₽", availability: "В наличии" },
+        { name: "iPhone 15 Pro Max", original: "30000₽", copy: "15000₽", battery: "4500₽", rear_glass: "1800₽", availability: "В наличии" },
+        { name: "iPhone 15 Pro", original: "29000₽", copy: "12000₽", battery: "4500₽", rear_glass: "1800₽", availability: "В наличии" },
+        { name: "iPhone 15", original: "", copy: "8000₽", battery: "3200₽", rear_glass: "1400₽", availability: "В наличии" },
+        { name: "iPhone 14 Plus", original: "14000₽", copy: "8500₽", battery: "2500₽", rear_glass: "900₽", availability: "В наличии" },
+        { name: "iPhone 14 Pro Max", original: "", copy: "12000₽", battery: "5500₽", rear_glass: "900₽", availability: "В наличии" }
+      ]
+    },
+    {
+      brand: "iPhone (средние)",
+      icon: "Smartphone",
+      color: "bg-gray-700",
+      models: [
+        { name: "iPhone 14 Pro", original: "20000₽", copy: "10000₽", battery: "5000₽", rear_glass: "900₽", availability: "В наличии" },
+        { name: "iPhone 14", original: "12000₽", copy: "3000₽", battery: "2500₽", rear_glass: "900₽", availability: "В наличии" },
+        { name: "iPhone 13 Pro Max", original: "13500₽", copy: "6500₽", battery: "5000₽", rear_glass: "900₽", availability: "В наличии" },
+        { name: "iPhone 13 Pro", original: "18000₽", copy: "5500₽", battery: "5000₽", rear_glass: "800₽", availability: "В наличии" },
+        { name: "iPhone 13 mini", original: "10500₽", copy: "3600₽", battery: "4000₽", rear_glass: "600₽", availability: "В наличии" },
+        { name: "iPhone 13", original: "10000₽", copy: "2500₽", battery: "4500₽", rear_glass: "600₽", availability: "В наличии" },
+        { name: "iPhone 12 Pro Max", original: "12000₽", copy: "2500₽", battery: "4500₽", rear_glass: "700₽", availability: "В наличии" },
+        { name: "iPhone 12/12 Pro", original: "", copy: "2200₽", battery: "3000₽/4000₽", rear_glass: "600₽", availability: "В наличии" },
+        { name: "iPhone 12 mini", original: "10000₽", copy: "3000₽", battery: "4000₽", rear_glass: "500₽", availability: "В наличии" }
+      ]
+    },
+    {
+      brand: "iPhone (старые)",
+      icon: "Smartphone",
+      color: "bg-gray-600",
+      models: [
+        { name: "iPhone 11 Pro Max", original: "6500₽", copy: "2500₽", battery: "4500₽", rear_glass: "500₽", availability: "В наличии" },
+        { name: "iPhone 11 Pro", original: "5500₽", copy: "2000₽", battery: "4000₽", rear_glass: "400₽", availability: "В наличии" },
+        { name: "iPhone 11", original: "2300-2500₽", copy: "1600₽", battery: "2500₽", rear_glass: "400₽", availability: "В наличии" },
+        { name: "iPhone XS Max", original: "8000₽", copy: "2000₽", battery: "2800₽", rear_glass: "400₽", availability: "В наличии" },
+        { name: "iPhone XS", original: "5000₽", copy: "1800₽", battery: "2500₽", rear_glass: "300₽", availability: "В наличии" },
+        { name: "iPhone X", original: "2600-4300₽", copy: "1800₽", battery: "2500₽", rear_glass: "300₽", availability: "В наличии" },
+        { name: "iPhone XR", original: "2300₽", copy: "1500₽", battery: "2500₽", rear_glass: "400₽", availability: "В наличии" },
+        { name: "iPhone 8+", original: "1800₽", copy: "1500₽", battery: "1000₽", rear_glass: "300₽", availability: "В наличии" },
+        { name: "iPhone 8/SE 2020", original: "1500₽", copy: "1100₽", battery: "800₽", rear_glass: "300₽", availability: "В наличии" }
+      ]
+    },
+    {
+      brand: "iPhone (классика)",
+      icon: "Smartphone",
+      color: "bg-gray-500",
+      models: [
+        { name: "iPhone 7+", original: "1500₽", copy: "1300₽", battery: "1000₽", rear_glass: "", availability: "В наличии" },
+        { name: "iPhone 7", original: "1500₽", copy: "1100₽", battery: "800₽", rear_glass: "", availability: "В наличии" },
+        { name: "iPhone 6s+", original: "1500₽", copy: "1100₽", battery: "800₽", rear_glass: "", availability: "В наличии" },
+        { name: "iPhone 6s", original: "1200₽", copy: "1100₽", battery: "800₽", rear_glass: "", availability: "В наличии" },
+        { name: "iPhone 6+", original: "1500₽", copy: "1300₽", battery: "800₽", rear_glass: "", availability: "В наличии" },
+        { name: "iPhone 6", original: "1200₽", copy: "1000₽", battery: "800₽", rear_glass: "", availability: "В наличии" },
+        { name: "iPhone 5s", original: "", copy: "", battery: "500₽", rear_glass: "", availability: "Под заказ" }
       ]
     },
     {
@@ -178,16 +224,34 @@ const PhoneRepairScreens = () => {
                         </Badge>
                       </div>
                       <div className="space-y-1">
-                        {(model as any).price && (
+                        {(model as any).original && (
                           <div className="flex justify-between text-xs">
                             <span className="text-gray-600">Оригинал:</span>
-                            <span className="font-bold text-blue-600">{(model as any).price}</span>
+                            <span className="font-bold text-blue-600">{(model as any).original}</span>
                           </div>
                         )}
                         {(model as any).copy && (
                           <div className="flex justify-between text-xs">
                             <span className="text-gray-600">Копия:</span>
                             <span className="font-bold text-green-600">{(model as any).copy}</span>
+                          </div>
+                        )}
+                        {(model as any).battery && (
+                          <div className="flex justify-between text-xs">
+                            <span className="text-gray-600">АКБ:</span>
+                            <span className="font-bold text-orange-600">{(model as any).battery}</span>
+                          </div>
+                        )}
+                        {(model as any).rear_glass && (
+                          <div className="flex justify-between text-xs">
+                            <span className="text-gray-600">Стекло заднее:</span>
+                            <span className="font-bold text-purple-600">{(model as any).rear_glass}</span>
+                          </div>
+                        )}
+                        {(model as any).price && (
+                          <div className="flex justify-between text-xs">
+                            <span className="text-gray-600">Цена:</span>
+                            <span className="font-bold text-blue-600">{(model as any).price}</span>
                           </div>
                         )}
                         {(model as any).glass && (
