@@ -229,15 +229,15 @@ const PhoneRepairScreens = () => {
       icon: "ShieldCheck",
       color: "bg-purple-600",
       models: [
-        { name: "iPhone 16 Pro Max", back_replacement: "3500₽", availability: "В наличии" },
-        { name: "iPhone 16 Pro", back_replacement: "3500₽", availability: "В наличии" },
-        { name: "iPhone 16", back_replacement: "3000₽", availability: "В наличии" },
-        { name: "iPhone 15 Pro Max", back_replacement: "3500₽", availability: "В наличии" },
-        { name: "iPhone 15 Pro", back_replacement: "3500₽", availability: "В наличии" },
-        { name: "iPhone 15", back_replacement: "3000₽", availability: "В наличии" },
-        { name: "iPhone 14 Pro Max", back_replacement: "3500₽", availability: "В наличии" },
-        { name: "iPhone 14 Pro", back_replacement: "3500₽", availability: "В наличии" },
-        { name: "iPhone 14 Plus", back_replacement: "3000₽", availability: "В наличии" }
+        { name: "iPhone 16 Pro Max", back_replacement: "7500₽", availability: "В наличии" },
+        { name: "iPhone 16 Pro", back_replacement: "7000₽", availability: "В наличии" },
+        { name: "iPhone 16", back_replacement: "7000₽", availability: "В наличии" },
+        { name: "iPhone 15 Pro Max", back_replacement: "7000₽", availability: "В наличии" },
+        { name: "iPhone 15 Pro", back_replacement: "6500₽", availability: "В наличии" },
+        { name: "iPhone 15", back_replacement: "6000₽", availability: "В наличии" },
+        { name: "iPhone 14 Pro Max", back_replacement: "6500₽", availability: "В наличии" },
+        { name: "iPhone 14 Pro", back_replacement: "6000₽", availability: "В наличии" },
+        { name: "iPhone 14 Plus", back_replacement: "6000₽", availability: "В наличии" }
       ]
     },
     {
@@ -245,15 +245,15 @@ const PhoneRepairScreens = () => {
       icon: "ShieldCheck", 
       color: "bg-purple-700",
       models: [
-        { name: "iPhone 14", back_replacement: "3000₽", availability: "В наличии" },
-        { name: "iPhone 13 Pro Max", back_replacement: "3000₽", availability: "В наличии" },
-        { name: "iPhone 13 Pro", back_replacement: "3000₽", availability: "В наличии" },
-        { name: "iPhone 13 mini", back_replacement: "2500₽", availability: "В наличии" },
-        { name: "iPhone 13", back_replacement: "2500₽", availability: "В наличии" },
-        { name: "iPhone 12 Pro Max", back_replacement: "3000₽", availability: "В наличии" },
-        { name: "iPhone 12 Pro", back_replacement: "2500₽", availability: "В наличии" },
-        { name: "iPhone 12", back_replacement: "2500₽", availability: "В наличии" },
-        { name: "iPhone 12 mini", back_replacement: "2500₽", availability: "В наличии" }
+        { name: "iPhone 14", back_replacement: "5500₽", availability: "В наличии" },
+        { name: "iPhone 13 Pro Max", back_replacement: "5000₽", availability: "В наличии" },
+        { name: "iPhone 13 Pro", back_replacement: "4800₽", availability: "В наличии" },
+        { name: "iPhone 13 mini", back_replacement: "4000₽", availability: "В наличии" },
+        { name: "iPhone 13", back_replacement: "4000₽", availability: "В наличии" },
+        { name: "iPhone 12 Pro Max", back_replacement: "4500₽", availability: "В наличии" },
+        { name: "iPhone 12 Pro", back_replacement: "4000₽", availability: "В наличии" },
+        { name: "iPhone 12", back_replacement: "3800₽", availability: "В наличии" },
+        { name: "iPhone 12 mini", back_replacement: "3500₽", availability: "В наличии" }
       ]
     },
     {
@@ -261,14 +261,15 @@ const PhoneRepairScreens = () => {
       icon: "ShieldCheck",
       color: "bg-purple-800",
       models: [
-        { name: "iPhone 11 Pro Max", back_replacement: "2500₽", availability: "В наличии" },
-        { name: "iPhone 11 Pro", back_replacement: "2500₽", availability: "В наличии" },
-        { name: "iPhone 11", back_replacement: "2000₽", availability: "В наличии" },
-        { name: "iPhone XS Max", back_replacement: "2500₽", availability: "В наличии" },
-        { name: "iPhone XS", back_replacement: "2000₽", availability: "В наличии" },
-        { name: "iPhone X", back_replacement: "2000₽", availability: "В наличии" },
-        { name: "iPhone 8 Plus", back_replacement: "1500₽", availability: "В наличии" },
-        { name: "iPhone 8", back_replacement: "1500₽", availability: "В наличии" }
+        { name: "iPhone 11 Pro Max", back_replacement: "4000₽", availability: "В наличии" },
+        { name: "iPhone 11 Pro", back_replacement: "3500₽", availability: "В наличии" },
+        { name: "iPhone 11", back_replacement: "3000₽", availability: "В наличии" },
+        { name: "iPhone XS Max", back_replacement: "2800₽", availability: "В наличии" },
+        { name: "iPhone XR", back_replacement: "2500₽", availability: "В наличии" },
+        { name: "iPhone XS", back_replacement: "2500₽", availability: "В наличии" },
+        { name: "iPhone X", back_replacement: "2500₽", availability: "В наличии" },
+        { name: "iPhone 8 Plus", back_replacement: "2200₽", availability: "В наличии" },
+        { name: "iPhone 8", back_replacement: "2000₽", availability: "В наличии" }
       ]
     },
     {
