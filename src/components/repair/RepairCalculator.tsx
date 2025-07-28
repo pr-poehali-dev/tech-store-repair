@@ -15,7 +15,17 @@ const RepairCalculator: React.FC<RepairCalculatorProps> = ({ isOpen, onClose }) 
   const [calculatedPrice, setCalculatedPrice] = useState('');
 
   const brands = [
-    { name: 'iPhone', models: ['iPhone 14 Pro Max', 'iPhone 14 Pro', 'iPhone 14', 'iPhone 13 Pro', 'iPhone 13', 'iPhone 12', 'iPhone 11', 'iPhone XR', 'iPhone X'] },
+    { name: 'iPhone', models: [
+      'iPhone 16 Pro Max', 'iPhone 16 Pro', 'iPhone 16', 
+      'iPhone 15 Pro Max', 'iPhone 15 Pro', 'iPhone 15', 'iPhone 15+',
+      'iPhone 14 Pro Max', 'iPhone 14 Pro', 'iPhone 14 Plus', 'iPhone 14',
+      'iPhone 13 Pro Max', 'iPhone 13 Pro', 'iPhone 13 mini', 'iPhone 13',
+      'iPhone 12 Pro Max', 'iPhone 12 Pro', 'iPhone 12', 'iPhone 12 mini',
+      'iPhone 11 Pro Max', 'iPhone 11 Pro', 'iPhone 11',
+      'iPhone XS Max', 'iPhone XS', 'iPhone XR', 'iPhone X',
+      'iPhone 8 Plus', 'iPhone 8', 'iPhone 7 Plus', 'iPhone 7',
+      'iPhone 6s Plus', 'iPhone 6s', 'iPhone 6 Plus', 'iPhone 6', 'iPhone 5s'
+    ]},
     { name: 'Samsung', models: ['Galaxy S23 Ultra', 'Galaxy S23+', 'Galaxy S23', 'Galaxy S22', 'Galaxy A54', 'Galaxy A34', 'Galaxy A24', 'Galaxy A14'] },
     { name: 'Xiaomi', models: ['Xiaomi 13 Pro', 'Xiaomi 13', 'Xiaomi 12', 'Mi 11', 'Mi 10T Pro'] },
     { name: 'Redmi', models: ['Redmi Note 12 Pro', 'Redmi Note 12', 'Redmi Note 11', 'Redmi 12C', 'Redmi 10A', 'Redmi 9A'] },
@@ -33,21 +43,48 @@ const RepairCalculator: React.FC<RepairCalculatorProps> = ({ isOpen, onClose }) 
     { name: 'Замена динамика/микрофона', price: 1000 },
     { name: 'Замена кнопок', price: 1200 },
     { name: 'Замена камеры', price: 2500 },
+    { name: 'Замена заднего стекла', price: 2000 },
     { name: 'Ремонт после воды', price: 2000 },
     { name: 'Перепрошивка', price: 1500 }
   ];
 
   const screenPrices = {
     'iPhone': {
-      'iPhone 14 Pro Max': { glass: 4500, display: 8500 },
-      'iPhone 14 Pro': { glass: 4200, display: 7800 },
-      'iPhone 14': { glass: 3800, display: 6500 },
-      'iPhone 13 Pro': { glass: 3800, display: 6900 },
-      'iPhone 13': { glass: 3400, display: 5800 },
-      'iPhone 12': { glass: 3200, display: 5500 },
-      'iPhone 11': { glass: 2800, display: 4800 },
-      'iPhone XR': { glass: 2400, display: 4200 },
-      'iPhone X': { glass: 2200, display: 3900 }
+      'iPhone 16 Pro Max': { replacement: 9500, backGlass: 7500 },
+      'iPhone 16 Pro': { replacement: 9000, backGlass: 7000 },
+      'iPhone 16': { replacement: 9000, backGlass: 7000 },
+      'iPhone 15 Pro Max': { replacement: 9000, backGlass: 7000 },
+      'iPhone 15 Pro': { replacement: 8500, backGlass: 6500 },
+      'iPhone 15': { replacement: 8000, backGlass: 6000 },
+      'iPhone 15+': { replacement: 8000, backGlass: 6000 },
+      'iPhone 14 Pro Max': { replacement: 8500, backGlass: 6500 },
+      'iPhone 14 Pro': { replacement: 8000, backGlass: 6000 },
+      'iPhone 14 Plus': { replacement: 8000, backGlass: 6000 },
+      'iPhone 14': { replacement: 7500, backGlass: 5500 },
+      'iPhone 13 Pro Max': { replacement: 7000, backGlass: 5000 },
+      'iPhone 13 Pro': { replacement: 6800, backGlass: 4800 },
+      'iPhone 13 mini': { replacement: 6000, backGlass: 4000 },
+      'iPhone 13': { replacement: 6000, backGlass: 4000 },
+      'iPhone 12 Pro Max': { replacement: 6500, backGlass: 4500 },
+      'iPhone 12 Pro': { replacement: 6000, backGlass: 4000 },
+      'iPhone 12': { replacement: 5800, backGlass: 3800 },
+      'iPhone 12 mini': { replacement: 5500, backGlass: 3500 },
+      'iPhone 11 Pro Max': { replacement: 6000, backGlass: 4000 },
+      'iPhone 11 Pro': { replacement: 5500, backGlass: 3500 },
+      'iPhone 11': { replacement: 5000, backGlass: 3000 },
+      'iPhone XS Max': { replacement: 4800, backGlass: 2800 },
+      'iPhone XS': { replacement: 4500, backGlass: 2500 },
+      'iPhone XR': { replacement: 4500, backGlass: 2500 },
+      'iPhone X': { replacement: 4500, backGlass: 2500 },
+      'iPhone 8 Plus': { replacement: 4200, backGlass: 2200 },
+      'iPhone 8': { replacement: 4000, backGlass: 2000 },
+      'iPhone 7 Plus': { replacement: 3500, backGlass: 0 },
+      'iPhone 7': { replacement: 3500, backGlass: 0 },
+      'iPhone 6s Plus': { replacement: 3500, backGlass: 0 },
+      'iPhone 6s': { replacement: 3200, backGlass: 0 },
+      'iPhone 6 Plus': { replacement: 3500, backGlass: 0 },
+      'iPhone 6': { replacement: 3200, backGlass: 0 },
+      'iPhone 5s': { replacement: 2500, backGlass: 0 }
     },
     'Samsung': {
       'Galaxy S23 Ultra': { glass: 3800, display: 7200 },
@@ -125,14 +162,16 @@ const RepairCalculator: React.FC<RepairCalculatorProps> = ({ isOpen, onClose }) 
     let totalPrice = repairType?.price || 0;
     let priceBreakdown = `Работа: ${totalPrice}₽`;
 
-    if (selectedRepair === 'Замена экрана (стекло)' || selectedRepair === 'Замена экрана (дисплей)') {
+    if (selectedRepair === 'Замена экрана' || selectedRepair === 'Замена заднего стекла') {
       const brandPrices = screenPrices[selectedBrand as keyof typeof screenPrices];
       if (brandPrices && brandPrices[selectedModel as keyof typeof brandPrices]) {
         const modelPrices = brandPrices[selectedModel as keyof typeof brandPrices];
-        const screenType = selectedRepair.includes('стекло') ? 'glass' : 'display';
+        const screenType = selectedRepair === 'Замена заднего стекла' ? 'backGlass' : 'replacement';
         const screenPrice = modelPrices[screenType as keyof typeof modelPrices];
-        totalPrice += screenPrice;
-        priceBreakdown += `\nЗапчасть: ${screenPrice}₽`;
+        if (screenPrice > 0) {
+          totalPrice += screenPrice;
+          priceBreakdown += `\nЗапчасть: ${screenPrice}₽`;
+        }
       }
     }
 
@@ -225,35 +264,37 @@ const RepairCalculator: React.FC<RepairCalculatorProps> = ({ isOpen, onClose }) 
                 ))}
                 
                 {/* Screen repair options */}
-                {selectedBrand && screenPrices[selectedBrand as keyof typeof screenPrices] && 
+                {selectedBrand === 'iPhone' && screenPrices[selectedBrand as keyof typeof screenPrices] && 
                  screenPrices[selectedBrand as keyof typeof screenPrices][selectedModel as keyof typeof screenPrices[typeof selectedBrand]] && (
                   <>
                     <Button
-                      variant={selectedRepair === 'Замена экрана (стекло)' ? "default" : "outline"}
+                      variant={selectedRepair === 'Замена экрана' ? "default" : "outline"}
                       className="w-full h-12 text-left justify-between"
                       onClick={() => {
-                        setSelectedRepair('Замена экрана (стекло)');
+                        setSelectedRepair('Замена экрана');
                         setCalculatedPrice('');
                       }}
                     >
-                      <span>Замена экрана (только стекло)</span>
-                      <span className="font-bold text-green-600">
-                        {screenPrices[selectedBrand as keyof typeof screenPrices][selectedModel as keyof typeof screenPrices[typeof selectedBrand]].glass}₽
-                      </span>
-                    </Button>
-                    <Button
-                      variant={selectedRepair === 'Замена экрана (дисплей)' ? "default" : "outline"}
-                      className="w-full h-12 text-left justify-between"
-                      onClick={() => {
-                        setSelectedRepair('Замена экрана (дисплей)');
-                        setCalculatedPrice('');
-                      }}
-                    >
-                      <span>Замена экрана (дисплей)</span>
+                      <span>Замена экрана</span>
                       <span className="font-bold text-blue-600">
-                        {screenPrices[selectedBrand as keyof typeof screenPrices][selectedModel as keyof typeof screenPrices[typeof selectedBrand]].display}₽
+                        {screenPrices[selectedBrand as keyof typeof screenPrices][selectedModel as keyof typeof screenPrices[typeof selectedBrand]].replacement}₽
                       </span>
                     </Button>
+                    {screenPrices[selectedBrand as keyof typeof screenPrices][selectedModel as keyof typeof screenPrices[typeof selectedBrand]].backGlass > 0 && (
+                      <Button
+                        variant={selectedRepair === 'Замена заднего стекла' ? "default" : "outline"}
+                        className="w-full h-12 text-left justify-between"
+                        onClick={() => {
+                          setSelectedRepair('Замена заднего стекла');
+                          setCalculatedPrice('');
+                        }}
+                      >
+                        <span>Замена заднего стекла</span>
+                        <span className="font-bold text-purple-600">
+                          {screenPrices[selectedBrand as keyof typeof screenPrices][selectedModel as keyof typeof screenPrices[typeof selectedBrand]].backGlass}₽
+                        </span>
+                      </Button>
+                    )}
                   </>
                 )}
               </div>
